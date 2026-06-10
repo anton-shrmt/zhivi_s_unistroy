@@ -511,8 +511,22 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   /* кнопки с длинными подписями переносятся, а не вылезают */
   .btn { white-space: normal; line-height: 1.25; }
 
-  /* сегмент «Модель аренды» в столбик: три подписи в ряд не помещаются */
+  /* сегмент «Модель аренды» в столбик: три подписи в ряд не помещаются
+     (запасной вид до инициализации JS) */
   .segment { grid-auto-flow: row; }
+
+  /* «колесо» выбора модели: выделение статично в центре, модели
+     прокручиваются по кругу (слоты раздаёт layoutModelWheel в app.js).
+     Радиус фона 28px = радиус кнопки-пилюли 23px + отступ 5px,
+     чтобы выделение точно следовало контуру фона. */
+  .segment.wheel { display: block; position: relative; height: 158px; border-radius: 28px; }
+  .segment.wheel button {
+    position: absolute; left: 5px; right: 5px; height: 46px; top: 0;
+    transition: transform .3s var(--ease), background .18s var(--ease), color .18s var(--ease);
+  }
+  .segment.wheel button[data-slot="0"] { transform: translateY(5px); }
+  .segment.wheel button[data-slot="1"] { transform: translateY(56px); }
+  .segment.wheel button[data-slot="2"] { transform: translateY(107px); }
 
   /* поле стоимости на всю ширину — «20 000 000» должно помещаться целиком */
   .price-input { width: 100%; }
@@ -556,7 +570,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <a href="#faq">Вопросы</a>
     </nav>
     <div class="header-right">
-      <a href="tel:+70000000000" class="header-phone">‹+7 000 000-00-00›</a>
+      <a href="tel:+70000000000" class="header-phone">+7 000 000-00-00</a>
       <button class="btn btn-accent" data-scroll="#lead" style="min-height:46px;padding:13px 22px;">Оставить заявку</button>
       <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
@@ -572,7 +586,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   <a href="#advantages">Преимущества</a>
   <a href="#pricing">Тарифы</a>
   <a href="#faq">Вопросы</a>
-  <a href="tel:+70000000000" class="mm-phone">‹+7 000 000-00-00›</a>
+  <a href="tel:+70000000000" class="mm-phone">+7 000 000-00-00</a>
   <button class="btn btn-accent btn-block" data-scroll="#lead">Оставить заявку</button>
 </aside>
 
@@ -591,15 +605,15 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       </div>
       <div class="hero-trust">
         <div>
-          <div class="trust-num">‹15›&nbsp;лет</div>
+          <div class="trust-num">15&nbsp;лет</div>
           <div class="trust-label">опыт застройщика Унистрой на рынке</div>
         </div>
         <div>
-          <div class="trust-num">‹1&nbsp;200›</div>
+          <div class="trust-num">1&nbsp;200</div>
           <div class="trust-label">квартир под управлением</div>
         </div>
         <div>
-          <div class="trust-num">‹94›%</div>
+          <div class="trust-num">94%</div>
           <div class="trust-label">средняя загрузка объектов</div>
         </div>
         <div>
@@ -752,9 +766,9 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
         </div>
 
         <div class="field" id="occField">
-          <label class="field-label" for="occSlider">Занятость <span class="occ-value" id="occVal">265 суток/год</span></label>
-          <input type="range" id="occSlider" min="150" max="340" step="5" value="265" aria-label="Занятость посуточной аренды, суток в год">
-          <p class="field-hint">Сколько суток в год квартира занята гостями.</p>
+          <label class="field-label" for="occSlider">Занятость <span class="occ-value" id="occVal">265 дней/год</span></label>
+          <input type="range" id="occSlider" min="150" max="340" step="5" value="265" aria-label="Занятость посуточной аренды, дней в год">
+          <p class="field-hint">Сколько дней в году квартира занята гостями.</p>
         </div>
       </div>
 
@@ -977,10 +991,10 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
         </div>
       </div>
       <div class="about-stats reveal">
-        <div class="about-stat"><div class="v">‹15› лет</div><div class="k">на рынке недвижимости</div></div>
-        <div class="about-stat"><div class="v">‹2 млн› м²</div><div class="k">построено и сдано</div></div>
-        <div class="about-stat"><div class="v">‹1 200›</div><div class="k">квартир под управлением</div></div>
-        <div class="about-stat"><div class="v">‹98›%</div><div class="k">собственников продлевают договор</div></div>
+        <div class="about-stat"><div class="v">15 лет</div><div class="k">на рынке недвижимости</div></div>
+        <div class="about-stat"><div class="v">2 млн м²</div><div class="k">построено и сдано</div></div>
+        <div class="about-stat"><div class="v">1 200</div><div class="k">квартир под управлением</div></div>
+        <div class="about-stat"><div class="v">98%</div><div class="k">собственников продлевают договор</div></div>
       </div>
     </div>
   </div>
@@ -1088,7 +1102,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
             </label>
             <button type="submit" class="btn btn-accent btn-block btn-lg" style="margin-top:20px">Оставить заявку</button>
             <div class="form-alt">
-              <a href="tel:+70000000000"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2A18 18 0 013 6a2 2 0 012-2z"/></svg>‹+7 000 000-00-00›</a>
+              <a href="tel:+70000000000"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2A18 18 0 013 6a2 2 0 012-2z"/></svg>+7 000 000-00-00</a>
               <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 5L2 12l7 2 2 7 3-5 5 4z"/></svg>Написать в мессенджер</a>
             </div>
           </div>
@@ -1127,7 +1141,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <div class="footer-col">
         <h4>Контакты</h4>
         <ul>
-          <li><a href="tel:+70000000000">‹+7 000 000-00-00›</a></li>
+          <li><a href="tel:+70000000000">+7 000 000-00-00</a></li>
           <li><a href="mailto:arenda@unistroy.ru">‹arenda@unistroy.ru›</a></li>
           <li><a href="#">‹Город, адрес офиса›</a></li>
           <li><a href="https://unistroy.ru" target="_blank" rel="noopener">unistroy.ru →</a></li>
@@ -1143,7 +1157,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       </div>
     </div>
     <div class="footer-bottom">
-      <span>‹ООО «Живи с Унистрой», ИНН ‹0000000000›, ОГРН ‹0000000000000›. Адрес: ‹…›.›</span>
+      <span>‹ООО «Живи с Унистрой», ИНН 0000000000, ОГРН 0000000000000. Адрес: ‹…›.›</span>
       <span><a href="#">Политика конфиденциальности</a> · <a href="#">Условия</a> · © 2026 Живи с Унистрой</span>
     </div>
   </div>
@@ -1168,6 +1182,7 @@ const CONFIG = {
 
 const TYPE_LABEL = { studio: 'Студия', r1: '1-комнатная', r2: '2-комнатная', r3: '3-комнатная' };
 const MODEL_LABEL = { longterm: 'Долгосрочная', daily: 'Посуточная', guaranteed: 'Гарантированная' };
+const MODEL_ORDER = ['daily', 'longterm', 'guaranteed'];
 
 /* ---- formatters ---- */
 const fmtRub = n => Math.round(n / 1000) * 1000;
@@ -1283,6 +1298,24 @@ function plural(n, forms) {
   return forms[2];
 }
 
+/* ---- мобильное «колесо» выбора модели: выбранная всегда в центре,
+        остальные прокручиваются по кругу вверх/вниз ---- */
+const wheelMq = window.matchMedia('(max-width: 620px)');
+function layoutModelWheel() {
+  const seg = document.getElementById('modelSeg');
+  if (!seg) return;
+  seg.classList.toggle('wheel', wheelMq.matches);
+  const btns = seg.querySelectorAll('button');
+  if (!wheelMq.matches) { btns.forEach(b => b.removeAttribute('data-slot')); return; }
+  const i = MODEL_ORDER.indexOf(state.model);
+  const slots = {
+    [MODEL_ORDER[(i + 2) % 3]]: 0, // сверху — предыдущая по кругу
+    [state.model]: 1,              // выбранная — всегда в центре
+    [MODEL_ORDER[(i + 1) % 3]]: 2  // снизу — следующая
+  };
+  btns.forEach(b => { b.dataset.slot = slots[b.dataset.model]; });
+}
+
 /* ---- wire calculator controls ---- */
 function initCalculator() {
   // model segment
@@ -1291,6 +1324,7 @@ function initCalculator() {
       document.querySelectorAll('#modelSeg button').forEach(b => b.setAttribute('aria-selected', 'false'));
       btn.setAttribute('aria-selected', 'true');
       state.model = btn.dataset.model;
+      layoutModelWheel();
       render();
     });
   });
@@ -1342,15 +1376,19 @@ function initCalculator() {
     render();
   });
 
-  // occupancy slider (суток в год)
+  // occupancy slider (дней в год)
   const occ = document.getElementById('occSlider');
   occ.value = state.days;
-  document.getElementById('occVal').textContent = occ.value + ' суток/год';
+  document.getElementById('occVal').textContent = occ.value + ' дней/год';
   occ.addEventListener('input', () => {
     state.days = +occ.value;
-    document.getElementById('occVal').textContent = occ.value + ' суток/год';
+    document.getElementById('occVal').textContent = occ.value + ' дней/год';
     render();
   });
+
+  layoutModelWheel();
+  if (wheelMq.addEventListener) wheelMq.addEventListener('change', layoutModelWheel);
+  else if (wheelMq.addListener) wheelMq.addListener(layoutModelWheel); // старые Safari
 
   render();
 }
