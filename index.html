@@ -438,7 +438,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--dark-3); color: rgba(255,255,255,0.7); padding: 80px 0 28px; }
-.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid var(--line-dark); }
+.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid var(--line-dark); }
 .footer-brand .logo { margin-bottom: 16px; }
 .footer-brand p { font-size: 14px; max-width: 300px; line-height: 1.35; }
 .footer-col h4 { font-size: 13px; text-transform: uppercase; letter-spacing: -0.015em; color: var(--white); margin: 0 0 16px; font-weight: 700; }
@@ -448,10 +448,6 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .footer-bottom { display: flex; flex-wrap: wrap; gap: 16px 28px; justify-content: space-between; padding-top: 26px; font-size: 13px; color: rgba(255,255,255,0.5); }
 .footer-bottom a { color: rgba(255,255,255,0.5); text-decoration: underline; }
 .footer-bottom a:hover { color: var(--accent); }
-.socials { display: flex; gap: 10px; }
-.socials a { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.07); display: grid; place-items: center; color: var(--white); transition: .15s; }
-.socials a:hover { background: var(--accent); color: var(--ink); }
-.socials svg { width: 18px; height: 18px; }
 
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
@@ -981,39 +977,39 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Как и когда происходят выплаты?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Выплаты поступают ежемесячно на вашу карту или счёт в согласованную дату. К каждой выплате прилагается отчёт: доход, удержания и состояние квартиры в личном кабинете.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false"><span>Кто платит за ремонт и поломки?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Мелкий текущий ремонт и обслуживание входят в услугу. Крупные работы согласуются с вами заранее. Ущерб по вине арендатора покрывается депозитом и страховкой.</div></div>
+        <div class="faq-a"><div class="inner">Выплаты поступают каждое 15-е число месяца на вашу карту. К каждой выплате прилагается отчёт с информацией о доходе, сервисном сборе, расходах и состоянии квартиры.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Какие гарантии вы даёте?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Договор управления, страхование имущества, депозит от арендатора и репутация застройщика Унистрой. На гарантированной модели — фиксированный платёж, закреплённый договором.</div></div>
+        <div class="faq-a"><div class="inner">Договор управления, страхование имущества и депозит от арендатора — это базовый уровень защиты для каждого собственника. На гарантированной модели добавляется фиксированный платёж, закреплённый в договоре.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Можно ли забрать квартиру обратно?</span><span class="pm" aria-hidden="true"></span></button>
         <div class="faq-a"><div class="inner">Да. Условия и сроки уведомления прописаны в договоре. Мы корректно завершим текущую аренду и вернём вам квартиру по акту.</div></div>
       </div>
       <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>Кто платит за ремонт и поломки?</span><span class="pm" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="inner">Мелкий текущий ремонт выполняет управляющая компания за счёт собственника, все работы согласовываются заранее. Ущерб по вине арендатора или его гостей покрывается депозитом и страховкой.</div></div>
+      </div>
+      <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Как считаются налоги?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Мы берём на себя налоговое сопровождение: расчёт, декларации и отчётность. Вам не нужно самостоятельно взаимодействовать с ФНС — всё оформляется корректно и вовремя.</div></div>
+        <div class="faq-a"><div class="inner">Мы берём это на себя: помогаем разобраться с налогами и оформить всё онлайн. Вам не нужно самостоятельно взаимодействовать с ФНС.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Нужен ли ремонт перед сдачей?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Не обязательно. Мы оценим квартиру и подскажем, в каком классе её сдавать — «Комфорт» или «Бизнес». От типа ремонта зависит ставка — это видно в калькуляторе.</div></div>
+        <div class="faq-a"><div class="inner">Необязательно. Мы оценим квартиру и определим рыночную ставку аренды — она зависит от типа и качества ремонта. Посмотреть, как это влияет на доход, можно в калькуляторе.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Как я контролирую состояние квартиры?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">В личном кабинете вы видите фотоотчёты регулярных проверок, историю заселений и платежей. По запросу организуем дополнительный осмотр.</div></div>
+        <div class="faq-a"><div class="inner">В личном кабинете доступна история платежей, оплата коммунальных услуг, история заселений и фотоотчёты. При необходимости организуем дополнительный осмотр.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Какой минимальный срок договора?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Минимальный срок зависит от модели аренды и обсуждается индивидуально. Чаще всего это от нескольких месяцев — точные условия специалист назовёт после оценки.</div></div>
+        <div class="faq-a"><div class="inner">Стандартный срок — 11 месяцев: это упрощает юридическое оформление. Для других форматов аренды срок обсуждается индивидуально.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Как расторгнуть договор?</span><span class="pm" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="inner">Расторжение возможно с уведомлением в срок, указанный в договоре. Мы завершим обязательства перед арендатором и передадим квартиру вам по акту приёма-передачи.</div></div>
+        <div class="faq-a"><div class="inner">Расторжение возможно с уведомлением в срок, согласованный в договоре. Мы завершим все обязательства перед арендатором и передадим квартиру вам по акту приёма-передачи.</div></div>
       </div>
     </div>
   </div>
@@ -1072,7 +1068,6 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
             <p class="form-error-global" id="formError" role="alert">Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.</p>
             <div class="form-alt">
               <a href="tel:+78432123007"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2A18 18 0 013 6a2 2 0 012-2z"/></svg>+7 (843) 212-30-07</a>
-              <a href="#"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 5L2 12l7 2 2 7 3-5 5 4z"/></svg>Написать в мессенджер</a>
             </div>
           </div>
 
@@ -1115,14 +1110,6 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <li><span>420053, Республика Татарстан, г. Казань, ул. Журналистов, зд. 62, офис 215</span></li>
           <li><a href="https://unistroy.ru" target="_blank" rel="noopener">unistroy.ru →</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Мы в сети</h4>
-        <div class="socials">
-          <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 5L2 12l7 2 2 7 3-5 5 4z"/></svg></a>
-          <a href="#" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7 10c.5 3 2.5 5 5 5h1v-2l2 2h2c-1-2-2-3-3-3 1-1 2-2 2-4h-2c-.4 1.4-1 2.3-2 3v-3H8"/></svg></a>
-          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l1.5-4A8 8 0 1112 20a8 8 0 01-4-1z"/></svg></a>
-        </div>
       </div>
     </div>
     <div class="footer-bottom">
