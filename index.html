@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Живи с Унистрой — доверительная аренда квартир под управлением застройщика</title>
-<meta name="description" content="Сдавайте квартиру через Унистрой и получайте арендный платёж за вычетом комиссии. Поиск жильцов, заселение, обслуживание и налоги берём на себя. Рассчитайте доход в калькуляторе.">
+<title>Живи с Унистрой — доверительная аренда квартир под управлением девелопера</title>
+<meta name="description" content="Сдавайте квартиру через департамент аренды компании Унистрой — мы найдём жильцов, организуем заселение и возьмём обслуживание на себя. Вы получаете доход после вычета комиссии.">
 <meta property="og:title" content="Живи с Унистрой — ваша квартира приносит доход, хлопоты — наши">
-<meta property="og:description" content="«Живи с Унистрой» — доверительная аренда от застройщика: 3 модели аренды, прозрачная комиссия, выплаты каждый месяц. Рассчитайте доходность квартиры онлайн.">
+<meta property="og:description" content="«Живи с Унистрой» — доверительная аренда от девелопера: 3 модели аренды, прозрачная комиссия, выплаты каждый месяц. Рассчитайте доходность квартиры онлайн.">
 <meta property="og:type" content="website">
 <!-- og:image требует абсолютный URL — заменить на https://<домен>/img/hero.jpg после привязки домена -->
 <meta property="og:image" content="img/hero.jpg">
@@ -444,10 +444,12 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .footer-col h4 { font-size: 13px; text-transform: uppercase; letter-spacing: -0.015em; color: var(--white); margin: 0 0 16px; font-weight: 700; }
 .footer-col ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 11px; }
 .footer-col a { font-size: 14.5px; color: rgba(255,255,255,0.7); transition: color .15s; }
-.footer-col a:hover { color: var(--accent); }
 .footer-bottom { display: flex; flex-wrap: wrap; gap: 16px 28px; justify-content: space-between; padding-top: 26px; font-size: 13px; color: rgba(255,255,255,0.5); }
 .footer-bottom a { color: rgba(255,255,255,0.5); text-decoration: underline; }
-.footer-bottom a:hover { color: var(--accent); }
+@media (hover: hover) and (pointer: fine) {
+  .footer-col a:hover { color: var(--accent); }
+  .footer-bottom a:hover { color: var(--accent); }
+}
 
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
@@ -489,6 +491,11 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
     padding: 90px 28px 28px; box-shadow: -20px 0 60px rgba(0,0,0,0.4); overflow-y: auto;
   }
   .mobile-menu.open { transform: none; }
+  .mobile-menu-close {
+    position: absolute; top: 24px; right: 28px; width: 44px; height: 44px;
+    border: none; border-radius: var(--r-sm); background: rgba(255,255,255,0.08); color: var(--white);
+    display: grid; place-items: center; font-size: 28px; line-height: 1;
+  }
   .mobile-menu a { display: block; padding: 15px 0; font-size: 18px; font-weight: 600; color: var(--white); border-bottom: 1px solid var(--line-dark); }
   .mobile-menu .btn { margin-top: 22px; }
   .mobile-menu .mm-phone { margin-top: 18px; font-weight: 700; color: var(--accent); display: block; font-size: 18px; }
@@ -544,6 +551,8 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 </head>
 <body>
 
+<div id="top" aria-hidden="true"></div>
+
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="siteHeader">
   <div class="bar">
@@ -569,6 +578,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 
 <div class="menu-backdrop" id="menuBackdrop"></div>
 <aside class="mobile-menu" id="mobileMenu" aria-label="Мобильное меню">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">×</button>
   <a href="#how">Как это работает</a>
   <a href="#calculator">Калькулятор</a>
   <a href="#advantages">Преимущества</a>
@@ -578,23 +588,23 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   <button class="btn btn-accent btn-block" data-scroll="#lead">Оставить заявку</button>
 </aside>
 
-<main id="top">
+<main>
 
 <!-- ============ HERO ============ -->
 <section class="hero on-dark" aria-label="Живи с Унистрой">
   <div class="container">
     <div class="hero-text reveal">
-      <p class="eyebrow">Доверительная аренда от застройщика</p>
+      <p class="eyebrow">Доверительная аренда от девелопера</p>
       <h1 class="display">Ваша квартира приносит доход.<br><span class="em">Хлопоты&nbsp;— наши</span></h1>
-      <p class="lead hero-sub">Сдавайте квартиру через Унистрой и получайте арендный платёж за вычетом комиссии. Поиск жильцов, заселение, обслуживание и налоги берём на себя.</p>
+      <p class="lead hero-sub">Сдавайте квартиру через департамент аренды компании Унистрой — мы найдём жильцов, организуем заселение и возьмём обслуживание на себя. Вы получаете доход после вычета комиссии.</p>
       <div class="hero-cta">
         <button class="btn btn-accent btn-lg" data-scroll="#calculator">Рассчитать доход</button>
         <button class="btn btn-outline btn-lg" data-scroll="#how">Как это работает</button>
       </div>
       <div class="hero-trust">
         <div>
-          <div class="trust-num">29&nbsp;лет</div>
-          <div class="trust-label">опыт застройщика Унистрой на рынке</div>
+          <div class="trust-num">30&nbsp;лет</div>
+          <div class="trust-label">опыт девелопера Унистрой на рынке</div>
         </div>
         <div>
           <div class="trust-num">1&nbsp;200</div>
@@ -634,32 +644,32 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>
         <h3>Поиск и проверка жильцов</h3>
-        <p>Объявления, показы и переговоры — на нас. Заселяем только проверенных арендаторов с подтверждённой платёжеспособностью.</p>
+        <p>Размещаем объявления, проводим показы и ведём переговоры. Проверяем арендаторов и выбираем тех, кто соответствует требованиям по платёжеспособности.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg></span>
         <h3>Минимальные простои</h3>
-        <p>Быстро находим новых жильцов и гибко управляем ценой, чтобы квартира не пустовала.</p>
+        <p>Следим за загрузкой квартиры, оперативно ищем новых жильцов и корректируем ставку в зависимости от спроса.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/></svg></span>
         <h3>Вся коммуникация</h3>
-        <p>«Потёк кран», «соседи шумят», «когда приедете» — все звонки и переписку с жильцами берём на себя, 24/7.</p>
+        <p>Берём на себя общение с арендаторами по бытовым и организационным вопросам. На связи 24/7 — от заселения до решения текущих ситуаций.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4l6 6-9 9-6 1 1-6z"/><path d="M13 5l6 6"/></svg></span>
         <h3>Страховка</h3>
-        <p>Имущество застраховано: поломки техники, аварии и ущерб по вине жильцов — не ваша забота.</p>
+        <p>Имущество застраховано. При поломках, авариях и ущербе со стороны арендаторов помогаем урегулировать вопрос.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M7 8h7a3 3 0 010 6H6"/></svg></span>
         <h3>Контроль оплаты</h3>
-        <p>Следим за платежами, напоминаем жильцам и решаем спорные ситуации — деньги приходят вовремя.</p>
+        <p>Контролируем поступление платежей, напоминаем арендаторам о сроках и подключаемся к решению спорных ситуаций.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg></span>
         <h3>Налоги и документы</h3>
-        <p>Декларации, договоры, акты и отчётность — оформляем всё корректно и вовремя, без бюрократии для вас.</p>
+        <p>Готовим договоры, акты, декларации и отчётность, чтобы вам не приходилось разбираться с документами самостоятельно.</p>
       </article>
     </div>
   </div>
@@ -815,7 +825,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <li><span class="ck">Комиссия</span><span class="cv">28%</span></li>
           <li><span class="ck">Риск простоя</span><span class="cv">Есть, сглаживаем</span></li>
         </ul>
-        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator">Рассчитать</button></div>
+        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator" data-calc-model="daily">Рассчитать</button></div>
       </article>
 
       <article class="comp-card feature" data-model="longterm">
@@ -832,7 +842,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <li><span class="ck">Комиссия</span><span class="cv">12%</span></li>
           <li><span class="ck">Риск простоя</span><span class="cv">Низкий</span></li>
         </ul>
-        <div class="comp-foot"><button class="btn btn-accent btn-block" data-scroll="#calculator">Рассчитать</button></div>
+        <div class="comp-foot"><button class="btn btn-accent btn-block" data-scroll="#calculator" data-calc-model="longterm">Рассчитать</button></div>
       </article>
 
       <article class="comp-card" data-model="guaranteed">
@@ -849,7 +859,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <li><span class="ck">Комиссия</span><span class="cv">25%, в ставке</span></li>
           <li><span class="ck">Риск простоя</span><span class="cv">Берём на себя</span></li>
         </ul>
-        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator">Рассчитать</button></div>
+        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator" data-calc-model="guaranteed">Рассчитать</button></div>
       </article>
     </div>
   </div>
@@ -877,14 +887,14 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">Почему Унистрой</p>
-      <h2 class="display">Надёжность застройщика&nbsp;— в каждой детали</h2>
+      <h2 class="display">Надёжность девелопера&nbsp;— в каждой детали</h2>
     </div>
     <div class="grid grid-4 reveal">
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><h3>Прозрачные выплаты</h3><p>Личный кабинет с историей платежей и отчётами по вашей квартире.</p></article>
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><h3>Проверенные жильцы</h3><p>Отбор и верификация арендаторов: документы, доходы, история.</p></article>
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Юридическая защита</h3><p>Договоры, депозиты и страхование имущества от ущерба.</p></article>
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14l4-4 3 3 5-5 4 4"/><path d="M3 20h18"/></svg></span><h3>Клининг и сервис</h3><p>Профессиональная уборка и обслуживание между жильцами.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l9-7 9 7v11z"/><path d="M9 21v-7h6v7"/></svg></span><h3>Бренд застройщика</h3><p>За управлением стоит крупный девелопер с репутацией и масштабом.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l9-7 9 7v11z"/><path d="M9 21v-7h6v7"/></svg></span><h3>Сила бренда</h3><p>За управлением стоит крупный девелопер с репутацией и масштабом.</p></article>
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v5h5M9 14h6"/></svg></span><h3>Налоговое сопровождение</h3><p>Берём на себя декларации, отчётность и взаимодействие с ФНС.</p></article>
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Контроль состояния</h3><p>Регулярные проверки квартиры и фотоотчёты о её состоянии.</p></article>
       <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Ежемесячная отчётность</h3><p>Понятный отчёт: доход, расходы, загрузка и состояние объекта.</p></article>
@@ -1022,7 +1032,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <div class="reveal">
         <p class="eyebrow">Оставить заявку</p>
         <h2 class="display">Узнайте доход вашей квартиры</h2>
-        <p class="lead" style="margin-top:18px">Оставьте контакты — специалист Унистрой свяжется с вами, оценит квартиру и предложит лучшую модель аренды. Бесплатно и без обязательств.</p>
+        <p class="lead" style="margin-top:18px">Оставьте контакты — менеджер департамента аренды свяжется с вами в течение рабочего дня, оценит квартиру и предложит подходящую модель аренды.</p>
         <ul class="pill-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Перезвоним в течение рабочего дня</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Расчёт дохода под вашу квартиру</li>
@@ -1067,14 +1077,16 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
             <button type="submit" class="btn btn-accent btn-block btn-lg" style="margin-top:20px">Оставить заявку</button>
             <p class="form-error-global" id="formError" role="alert">Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.</p>
             <div class="form-alt">
+              <span>Связаться с департаментом аренды:</span>
               <a href="tel:+78432123007"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a14 14 0 006 6l2-3 5 2v4a2 2 0 01-2 2A18 18 0 013 6a2 2 0 012-2z"/></svg>+7 (843) 212-30-07</a>
+              <a href="mailto:arenda@unistroy.ru">arenda@unistroy.ru</a>
             </div>
           </div>
 
           <div class="form-success" id="formSuccess" role="status">
             <div class="ok-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg></div>
             <h3>Заявка принята</h3>
-            <p>Специалист Унистрой свяжется с вами в течение рабочего дня. Спасибо за доверие!</p>
+            <p>Менеджер департамента аренды свяжется с вами в течение рабочего дня. Спасибо за доверие!</p>
           </div>
         </form>
       </div>
@@ -1090,7 +1102,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
     <div class="footer-top">
       <div class="footer-brand">
         <a href="#top" class="logo"><img src="img/logo-white.png" alt="Унистрой" width="149" height="32"></a>
-        <p>Департамент доверительной аренды застройщика Унистрой. Сдаём вашу квартиру и берём все хлопоты на себя.</p>
+        <p>Департамент доверительной аренды девелопера Унистрой. Сдаём вашу квартиру и берём все хлопоты на себя.</p>
       </div>
       <div class="footer-col">
         <h4>Разделы</h4>
@@ -1270,6 +1282,16 @@ function setText(id, val) {
   if (el) el.textContent = val;
 }
 
+function setModel(model) {
+  const active = document.querySelector(`#modelSeg button[data-model="${model}"]`);
+  if (!active) return;
+  document.querySelectorAll('#modelSeg button').forEach(btn => {
+    btn.setAttribute('aria-selected', String(btn === active));
+  });
+  state.model = model;
+  render();
+}
+
 function plural(n, forms) {
   n = Math.round(n);
   const n10 = n % 10, n100 = n % 100;
@@ -1282,12 +1304,7 @@ function plural(n, forms) {
 function initCalculator() {
   // model segment
   document.querySelectorAll('#modelSeg button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#modelSeg button').forEach(b => b.setAttribute('aria-selected', 'false'));
-      btn.setAttribute('aria-selected', 'true');
-      state.model = btn.dataset.model;
-      render();
-    });
+    btn.addEventListener('click', () => setModel(btn.dataset.model));
   });
 
   // type chips
@@ -1394,6 +1411,7 @@ function initMenu() {
   const burger = document.getElementById('burger');
   const menu = document.getElementById('mobileMenu');
   const backdrop = document.getElementById('menuBackdrop');
+  const closeBtn = document.getElementById('mobileMenuClose');
   const toggle = (open) => {
     burger.classList.toggle('open', open);
     menu.classList.toggle('open', open);
@@ -1402,8 +1420,9 @@ function initMenu() {
     document.body.style.overflow = open ? 'hidden' : '';
   };
   burger.addEventListener('click', () => toggle(!menu.classList.contains('open')));
+  if (closeBtn) closeBtn.addEventListener('click', () => toggle(false));
   backdrop.addEventListener('click', () => toggle(false));
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggle(false)));
+  menu.querySelectorAll('a, button[data-scroll]').forEach(el => el.addEventListener('click', () => toggle(false)));
 }
 
 /* ---- scroll reveal ---- */
@@ -1420,23 +1439,34 @@ function initReveal() {
 function initForm() {
   const form = document.getElementById('leadForm');
   if (!form) return;
+  const name = form.querySelector('#fName');
+  const phone = form.querySelector('#fPhone');
+  const consent = form.querySelector('#fConsent');
+
+  const validateName = (show = false) => {
+    const valid = name.value.trim().length >= 2;
+    if (show || valid || name.closest('.form-field').classList.contains('error')) {
+      setFieldError(name, valid ? '' : 'Укажите имя');
+    }
+    return valid;
+  };
+
+  const validatePhone = (show = false) => {
+    const valid = phone.value.replace(/\D/g, '').length >= 10;
+    if (show || valid || phone.closest('.form-field').classList.contains('error')) {
+      setFieldError(phone, valid ? '' : 'Укажите корректный телефон');
+    }
+    return valid;
+  };
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     let ok = true;
-
-    const name = form.querySelector('#fName');
-    const phone = form.querySelector('#fPhone');
-    const consent = form.querySelector('#fConsent');
     const submitBtn = form.querySelector('button[type="submit"]');
     setFormError('');
 
-    setFieldError(name, name.value.trim().length >= 2 ? '' : 'Укажите имя');
-    if (name.value.trim().length < 2) ok = false;
-
-    const phoneClean = phone.value.replace(/\D/g, '');
-    const phoneOk = phoneClean.length >= 10;
-    setFieldError(phone, phoneOk ? '' : 'Укажите корректный телефон');
-    if (!phoneOk) ok = false;
+    if (!validateName(true)) ok = false;
+    if (!validatePhone(true)) ok = false;
 
     const consentWrap = consent.closest('.consent');
     consentWrap.classList.toggle('error', !consent.checked);
@@ -1473,18 +1503,69 @@ function initForm() {
     }
   });
 
-  // phone mask (light)
-  const phone = form.querySelector('#fPhone');
-  phone.addEventListener('input', () => {
-    let d = phone.value.replace(/\D/g, '').slice(0, 11);
-    if (d.startsWith('8')) d = '7' + d.slice(1);
-    if (d && !d.startsWith('7')) d = '7' + d;
+  name.addEventListener('input', () => validateName());
+  consent.addEventListener('change', () => {
+    consent.closest('.consent').classList.toggle('error', !consent.checked);
+  });
+
+  function normalizePhoneDigits(value) {
+    let digits = value.replace(/\D/g, '').slice(0, 11);
+    if (digits.startsWith('8')) digits = '7' + digits.slice(1);
+    if (digits && !digits.startsWith('7')) digits = '7' + digits;
+    return digits;
+  }
+
+  function formatPhoneValue(value) {
+    const digits = normalizePhoneDigits(value);
+    if (!digits || digits === '7') return '';
     let out = '+7';
-    if (d.length > 1) out += ' (' + d.slice(1, 4);
-    if (d.length >= 4) out += ') ' + d.slice(4, 7);
-    if (d.length >= 7) out += '-' + d.slice(7, 9);
-    if (d.length >= 9) out += '-' + d.slice(9, 11);
-    phone.value = out;
+    if (digits.length > 1) out += ' (' + digits.slice(1, 4);
+    if (digits.length >= 4) out += ') ' + digits.slice(4, 7);
+    if (digits.length >= 7) out += '-' + digits.slice(7, 9);
+    if (digits.length >= 9) out += '-' + digits.slice(9, 11);
+    return out;
+  }
+
+  function caretPosFromDigitCount(value, digitsCount) {
+    if (digitsCount <= 0) return 0;
+    let seen = 0;
+    for (let i = 0; i < value.length; i += 1) {
+      if (/\d/.test(value[i])) {
+        seen += 1;
+        if (seen === digitsCount) return i + 1;
+      }
+    }
+    return value.length;
+  }
+
+  phone.addEventListener('keydown', (e) => {
+    if (e.key !== 'Backspace' || phone.selectionStart !== phone.selectionEnd) return;
+    const pos = phone.selectionStart;
+    const value = phone.value;
+    if (!pos || /\d/.test(value[pos - 1])) return;
+
+    e.preventDefault();
+    const digits = normalizePhoneDigits(value);
+    const digitsBeforeCaret = value.slice(0, pos).replace(/\D/g, '').length;
+    const removeIndex = digitsBeforeCaret - 1;
+
+    if (removeIndex < 1) {
+      phone.value = '';
+      validatePhone();
+      return;
+    }
+
+    const nextDigits = digits.slice(0, removeIndex) + digits.slice(removeIndex + 1);
+    const formatted = formatPhoneValue(nextDigits);
+    phone.value = formatted;
+    const nextPos = caretPosFromDigitCount(formatted, removeIndex);
+    phone.setSelectionRange(nextPos, nextPos);
+    validatePhone();
+  });
+
+  phone.addEventListener('input', () => {
+    phone.value = formatPhoneValue(phone.value);
+    validatePhone();
   });
 }
 
@@ -1559,7 +1640,11 @@ function initScrollLinks() {
   document.querySelectorAll('[data-scroll]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const target = document.querySelector(btn.getAttribute('data-scroll'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      if (!target) return;
+      const model = btn.dataset.calcModel;
+      if (model) setModel(model);
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
   const applyBtn = document.getElementById('applyCalcBtn');
