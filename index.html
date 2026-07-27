@@ -110,6 +110,8 @@ h3.display { font-size: 32px; }
   width: 28px; height: 2px;
   background: var(--accent);
 }
+.eyebrow.eyebrow-dashed::before { display: none; }
+.eyebrow.eyebrow-dashed { gap: 0; }
 .on-dark .eyebrow { color: var(--accent); }
 .on-dark .eyebrow::before { background: var(--accent); }
 
@@ -177,7 +179,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .logo img { display: block; height: 32px; width: auto; }
 
 .nav { display: flex; gap: 26px; margin-left: 14px; }
-.nav a { font-weight: 500; font-size: 15px; color: rgba(255,255,255,0.8); position: relative; padding: 4px 0; transition: color .15s; }
+.nav a { font-weight: 500; font-size: 15px; color: rgba(255,255,255,0.8); position: relative; padding: 4px 0; transition: color .15s; white-space: nowrap; }
 .nav a::after { content:""; position:absolute; left:0; right:100%; bottom:-2px; height:2px; background: var(--accent); transition: right .2s var(--ease); }
 .nav a:hover { color: var(--white); }
 .nav a:hover::after { right: 0; }
@@ -209,11 +211,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero h1 .em { color: var(--accent); }
 .hero-sub { max-width: 540px; margin-bottom: 32px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 40px; }
-.hero-trust { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; border-top: 1px solid var(--line-dark); padding-top: 28px; }
+.hero-trust { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; border-top: 1px solid var(--line-dark); padding-top: 28px; }
 .trust-num { font-family: var(--font-display); font-weight: 700; font-size: clamp(26px, 3vw, 38px); color: var(--accent); line-height: 1; margin-bottom: 8px; }
-/* текстовое значение вместо числа: меньше кегль, но прижато к той же базовой линии */
-.trust-num.trust-word { font-size: clamp(17px, 1.8vw, 22px); min-height: clamp(26px, 3vw, 38px); display: flex; align-items: flex-end; }
 .trust-label { font-size: 13.5px; color: rgba(255,255,255,0.7); line-height: 1.35; }
+.hero-trust-note { grid-column: 1 / -1; margin: 0; padding-left: 12px; border-left: 2px solid var(--accent); text-align: left; font-size: 14px; font-weight: 600; line-height: 1.35; color: rgba(255,255,255,0.9); }
 
 .hero-visual { position: relative; }
 .hero-card-img { width: auto; height: min(620px, calc(100vh - 220px)); aspect-ratio: 4/5; margin-left: auto; border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
@@ -270,7 +271,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .split-arrow { background: var(--accent); display: grid; place-items: center; padding: 0 14px; color: var(--ink); }
 .split-arrow svg { width: 34px; height: 34px; }
 .split h3 { margin-top: 0; }
-.split-you .big { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: clamp(22px,2.6vw,30px); color: var(--dark); line-height: 1.05; }
+.split-you .big, .split-us .big { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: clamp(22px,2.6vw,30px); line-height: 1.05; }
+.split-you .big { color: var(--dark); }
+.split-us .big { color: var(--white); }
+.split-us-label { color: var(--white) !important; font-weight: 700; line-height: 1.25; }
+.split-us-label::before { background: var(--accent) !important; }
 .checklist { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 13px; }
 .checklist li { display: flex; gap: 12px; align-items: flex-start; font-size: 15.5px; line-height: 1.4; }
 .checklist li svg { flex: none; width: 22px; height: 22px; margin-top: 1px; color: var(--accent); }
@@ -369,15 +374,21 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .comp-rows li .cv { font-weight: 700; color: var(--ink); text-align: right; }
 .comp-foot { padding: 0 20px 20px; }
 
-/* ---------- Included groups ---------- */
-.incl { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-.incl-group { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); padding: 20px; }
-.incl-group h3 { font-size: 17px; font-weight: 700; color: var(--ink); margin: 0 0 16px; display: flex; align-items: center; gap: 10px; line-height: 1.1; letter-spacing: -0.01em; }
-.incl-group h3 .ic { width: 36px; height: 36px; border-radius: var(--r-sm); background: var(--mint); display: grid; place-items: center; color: var(--dark); }
-.incl-group h3 .ic svg { width: 19px; height: 19px; }
-.incl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; }
-.incl-list li { display: flex; gap: 10px; font-size: 14px; color: var(--graphite); line-height: 1.35; }
-.incl-list li svg { flex: none; width: 19px; height: 19px; color: var(--accent-deep); margin-top: 1px; }
+/* ---------- Owner app ---------- */
+.app-showcase { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+.app-copy { min-width: 0; padding: clamp(32px, 4vw, 64px); background: var(--white); }
+.app-intro .eyebrow { margin-bottom: 20px; }
+.app-intro .display { max-width: 650px; }
+.app-features { margin-top: clamp(34px, 4vw, 52px); border-top: 1px solid var(--line); }
+.app-feature { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 18px; padding: 25px 0; }
+.app-feature + .app-feature { border-top: 1px solid var(--line); }
+.app-feature-no { font-family: var(--font-display); font-weight: 700; font-size: 15px; line-height: 1.15; color: var(--accent-deep); }
+.app-feature h3 { margin: 0 0 8px; font-size: 20px; font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); }
+.app-feature p { max-width: 470px; margin: 0; font-size: 16px; line-height: 1.35; color: var(--gray-2); }
+.app-device { position: relative; min-height: 620px; padding: 78px 28px 28px; background: var(--dark); display: flex; align-items: flex-end; justify-content: center; overflow: hidden; }
+.app-device-label { position: absolute; top: 32px; left: 32px; margin: 0; display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-body); font-weight: 500; text-transform: uppercase; letter-spacing: -0.015em; font-size: 13px; color: var(--accent); }
+.app-device-label::before { content: ""; width: 28px; height: 2px; background: var(--accent); }
+.app-device img { display: block; width: min(100%, 270px); height: auto; }
 
 /* ---------- Commission ---------- */
 .comm { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
@@ -465,7 +476,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   .section-head { margin-bottom: 40px; }
   .hero .container { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
-  .hero-trust { grid-template-columns: repeat(2,1fr); gap: 24px; }
+  .hero-trust { grid-template-columns: repeat(3,1fr); gap: 24px; }
   .calc { grid-template-columns: 1fr; }
   .calc-result { position: static; }
   .steps { grid-template-columns: repeat(2,1fr); }
@@ -473,12 +484,13 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   .grid-4 { grid-template-columns: repeat(2,1fr); }
   .footer-top { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .nav, .header-phone { display: none; }
   .burger { display: flex; }
   .header-right { margin-left: auto; }
   .compare { grid-template-columns: 1fr; }
-  .incl { grid-template-columns: 1fr; }
+  .app-showcase { grid-template-columns: 1fr; }
+  .app-device { min-height: 560px; }
   .comm { grid-template-columns: 1fr; }
   .cta-final { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; }
@@ -520,6 +532,14 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   .hero-cta .btn { width: 100%; }
   .res-grid { grid-template-columns: 1fr 1fr; }
   .footer-top { grid-template-columns: 1fr; }
+  .app-copy { padding: 32px 24px; }
+  .app-features { margin-top: 34px; }
+  .app-feature { grid-template-columns: 34px minmax(0, 1fr); gap: 12px; padding: 22px 0; }
+  .app-feature h3 { font-size: 19px; }
+  .app-feature p { font-size: 16px; }
+  .app-device { min-height: 490px; padding: 70px 24px 24px; }
+  .app-device-label { top: 26px; left: 24px; }
+  .app-device img { width: min(100%, 220px); }
 
   /* кнопки с длинными подписями переносятся, а не вылезают */
   .btn { white-space: normal; line-height: 1.1; }
@@ -594,9 +614,9 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 <section class="hero on-dark" aria-label="Живи с Унистрой">
   <div class="container">
     <div class="hero-text reveal">
-      <p class="eyebrow">Доверительная аренда от девелопера</p>
-      <h1 class="display">Ваша квартира приносит доход.<br><span class="em">Хлопоты&nbsp;— наши</span></h1>
-      <p class="lead hero-sub">Сдавайте квартиру через департамент аренды компании Унистрой — мы найдём жильцов, организуем заселение и возьмём обслуживание на себя. Вы получаете доход после вычета комиссии.</p>
+      <p class="eyebrow">Доверьте аренду федеральному девелоперу Унистрой</p>
+      <h1 class="display">Ваша квартира работает<br><span class="em">Вы&nbsp;— отдыхаете</span></h1>
+      <p class="lead hero-sub">Превратите недвижимость в источник стабильного пассивного дохода. Команда Унистрой возьмёт на себя всю рутину: от поиска жильцов и заселения до клининга, ремонта и контроля выплат.</p>
       <div class="hero-cta">
         <button class="btn btn-accent btn-lg" data-scroll="#calculator">Рассчитать доход</button>
         <button class="btn btn-outline btn-lg" data-scroll="#how">Как это работает</button>
@@ -614,10 +634,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <div class="trust-num">94%</div>
           <div class="trust-label">средняя загрузка объектов</div>
         </div>
-        <div>
-          <div class="trust-num trust-word">Раз в месяц</div>
-          <div class="trust-label">выплаты собственнику без задержек</div>
-        </div>
+        <p class="hero-trust-note">Выплаты собственнику без задержек один раз в месяц</p>
       </div>
     </div>
     <div class="hero-visual reveal">
@@ -637,14 +654,14 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">Что мы берём на себя</p>
-      <h2 class="display">Мы решаем всё, что раздражает в&nbsp;аренде</h2>
-      <p class="lead">Сдавать самому&nbsp;— это объявления, звонки и бюрократия. С нами аренда становится по-настоящему пассивным доходом.</p>
+      <h2 class="display">Защищаем вас и ваш актив от рисков</h2>
+      <p class="lead">Сдавать квартиру самостоятельно — это страх простоя, порчи имущества и неплатежей. Мы превращаем сдачу жилья в безупречный отельный сервис, где всё работает как часы, а вы защищены на каждом этапе.</p>
     </div>
     <div class="grid grid-3 reveal">
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>
         <h3>Поиск и проверка жильцов</h3>
-        <p>Размещаем объявления, проводим показы и ведём переговоры. Проверяем арендаторов и выбираем тех, кто соответствует требованиям по платёжеспособности.</p>
+        <p>Наши эксперты размещают объявления, проводят показы, ведут переговоры. Мы сами проверяем и выбираем только платежеспособных арендаторов.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="9"/></svg></span>
@@ -654,12 +671,12 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/></svg></span>
         <h3>Вся коммуникация</h3>
-        <p>Берём на себя общение с арендаторами по бытовым и организационным вопросам. На связи 24/7 — от заселения до решения текущих ситуаций.</p>
+        <p>Берём на себя общение с арендаторами по бытовым и организационным вопросам. Наши сотрудники на связи 24/7, пока вы отдыхаете.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4l6 6-9 9-6 1 1-6z"/><path d="M13 5l6 6"/></svg></span>
         <h3>Страховка</h3>
-        <p>Имущество застраховано. При поломках, авариях и ущербе со стороны арендаторов помогаем урегулировать вопрос.</p>
+        <p>Ваше имущество в Унистрой застраховано — при поломках, авариях и ущербе со стороны арендаторов помогаем урегулировать вопрос.</p>
       </article>
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M7 8h7a3 3 0 010 6H6"/></svg></span>
@@ -669,7 +686,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <article class="card">
         <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg></span>
         <h3>Налоги и документы</h3>
-        <p>Готовим договоры, акты, декларации и отчётность, чтобы вам не приходилось разбираться с документами самостоятельно.</p>
+        <p>Делегируем подготовку документов и отчётности профессионалам — вам не придётся разбираться с бюрократией.</p>
       </article>
     </div>
   </div>
@@ -680,24 +697,24 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   <div class="container">
     <div class="section-head center reveal">
       <p class="eyebrow">Решение</p>
-      <h2 class="display">Вы получаете деньги.<br>Все заботы&nbsp;— <span class="mark">на нас</span></h2>
+      <h2 class="display">Делегируйте 99% задач по аренде Унистрой</h2>
     </div>
     <div class="split reveal">
       <div class="split-col split-you">
-        <h3 class="eyebrow" style="margin-bottom:14px">Собственник</h3>
-        <p class="big">Подписываете договор и&nbsp;получаете доход</p>
+        <h3 class="eyebrow" style="margin-bottom:14px">Вы</h3>
+        <p class="big">Подписываете договор и&nbsp;получаете доход каждый месяц:</p>
         <ul class="checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Никаких звонков и показов</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Никакого ремонта и переписки</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Деньги на карту каждый месяц</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Без звонков и показов</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Без текущего ремонта</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Без переписки с арендатором</li>
         </ul>
       </div>
       <div class="split-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </div>
       <div class="split-col split-us">
-        <h3 class="eyebrow" style="margin-bottom:14px">Живи с Унистрой</h3>
-        <p class="big" style="color:#fff">Берём на себя весь операционный цикл</p>
+        <h3 class="eyebrow split-us-label" style="margin-bottom:14px">Профессионалы сервиса аренды</h3>
+        <p class="big">Берут на себя весь операционный цикл:</p>
         <ul class="checklist">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Поиск, проверка и заселение жильцов</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Клининг, обслуживание и мелкий ремонт</li>
@@ -706,6 +723,69 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Налоговая отчётность и документы</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON ============ -->
+<section class="section bg-mint" id="models">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">три модели аренды</p>
+      <h2 class="display">Готовое решение под любую задачу</h2>
+      <p class="lead">Выбирайте оптимальный формат, который подходит вам — в зависимости от целей, локации квартиры и желаемого дохода.</p>
+    </div>
+    <div class="compare reveal">
+      <article class="comp-card" data-model="daily">
+        <div class="comp-head">
+          <span class="comp-tag">Максимум дохода</span>
+          <h3 class="comp-name">Посуточная</h3>
+          <p class="comp-sub">Выше доход, активное управление с нашей стороны.</p>
+        </div>
+        <ul class="comp-rows">
+          <li><span class="ck">Потенциальный доход</span><span class="cv">Высокий</span></li>
+          <li><span class="ck">Стабильность</span><span class="cv">Средняя</span></li>
+          <li><span class="ck">Кому подходит</span><span class="cv">Локации с туристами</span></li>
+          <li><span class="ck">Жильцов ищем</span><span class="cv">Мы</span></li>
+          <li><span class="ck">Комиссия</span><span class="cv">28%</span></li>
+          <li><span class="ck">Риск простоя</span><span class="cv">Есть, сглаживаем</span></li>
+        </ul>
+        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator" data-calc-model="daily">Рассчитать</button></div>
+      </article>
+
+      <article class="comp-card feature" data-model="longterm">
+        <div class="comp-head">
+          <span class="comp-tag">Баланс</span>
+          <h3 class="comp-name">Долгосрочная</h3>
+          <p class="comp-sub">Стабильный доход с минимумом операционных забот.</p>
+        </div>
+        <ul class="comp-rows">
+          <li><span class="ck">Потенциальный доход</span><span class="cv">Средний</span></li>
+          <li><span class="ck">Стабильность</span><span class="cv">Высокая</span></li>
+          <li><span class="ck">Кому подходит</span><span class="cv">Большинству квартир</span></li>
+          <li><span class="ck">Жильцов ищем</span><span class="cv">Мы</span></li>
+          <li><span class="ck">Комиссия</span><span class="cv">12%</span></li>
+          <li><span class="ck">Риск простоя</span><span class="cv">Низкий</span></li>
+        </ul>
+        <div class="comp-foot"><button class="btn btn-accent btn-block" data-scroll="#calculator" data-calc-model="longterm">Рассчитать</button></div>
+      </article>
+
+      <article class="comp-card" data-model="guaranteed">
+        <div class="comp-head">
+          <span class="comp-tag">Без рисков</span>
+          <h3 class="comp-name">Гарантированная</h3>
+          <p class="comp-sub">Фиксированный платёж каждый месяц независимо от простоев.</p>
+        </div>
+        <ul class="comp-rows">
+          <li><span class="ck">Потенциальный доход</span><span class="cv">Фикс 75%</span></li>
+          <li><span class="ck">Стабильность</span><span class="cv">Максимальная</span></li>
+          <li><span class="ck">Кому подходит</span><span class="cv">Кто хочет предсказуемость</span></li>
+          <li><span class="ck">Жильцов ищем</span><span class="cv">Мы</span></li>
+          <li><span class="ck">Комиссия</span><span class="cv">25%, в ставке</span></li>
+          <li><span class="ck">Риск простоя</span><span class="cv">Берём на себя</span></li>
+        </ul>
+        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator" data-calc-model="guaranteed">Рассчитать</button></div>
+      </article>
     </div>
   </div>
 </section>
@@ -774,20 +854,20 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
       <aside class="calc-result" aria-live="polite">
         <div class="res-main">
           <div class="res-label">Ваш доход в месяц</div>
-          <div class="res-income val-anim"><span id="resIncome">40 000</span> <span class="cur">₽</span></div>
+          <div class="res-income val-anim"><span id="resIncome">39&nbsp;600</span> <span class="cur">₽</span></div>
           <div class="res-per">после вычета комиссии Унистрой</div>
         </div>
 
         <div class="res-grid">
-          <div class="res-cell"><div class="v" id="resYearly">1 125 000 ₽</div><div class="k">Доход в год</div></div>
-          <div class="res-cell"><div class="v accent" id="resYield">17,3%</div><div class="k">Доходность годовых</div></div>
-          <div class="res-cell"><div class="v" id="resPayback">5,1 года</div><div class="k">Срок окупаемости</div></div>
-          <div class="res-cell"><div class="v" id="resType">45 000 ₽</div><div class="k" id="resTypeK">Ставка до комиссии</div></div>
+          <div class="res-cell"><div class="v" id="resYearly">1&nbsp;425&nbsp;200 ₽</div><div class="k">Доход в год</div></div>
+          <div class="res-cell"><div class="v accent" id="resYield">15%</div><div class="k">Доходность годовых</div></div>
+          <div class="res-cell"><div class="v" id="resPayback">5,7 года</div><div class="k">Срок окупаемости</div></div>
+          <div class="res-cell"><div class="v" id="resType">45&nbsp;000 ₽</div><div class="k" id="resTypeK">Ставка до комиссии</div></div>
         </div>
 
         <div class="res-commission" id="resCommission">
           <span class="ck">Комиссия Унистрой 12%</span>
-          <span class="cv">− 5 000 ₽ / мес</span>
+          <span class="cv">− 5&nbsp;400 ₽ / мес</span>
         </div>
 
         <div class="res-flag" id="resFlag">
@@ -802,82 +882,19 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   </div>
 </section>
 
-<!-- ============ COMPARISON ============ -->
-<section class="section bg-mint" id="models">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Сравнение моделей</p>
-      <h2 class="display">Три модели — под вашу задачу</h2>
-      <p class="lead">Выбрать можно прямо в калькуляторе. Подсветка ниже соответствует выбранной модели.</p>
-    </div>
-    <div class="compare reveal">
-      <article class="comp-card" data-model="daily">
-        <div class="comp-head">
-          <span class="comp-tag">Максимум дохода</span>
-          <h3 class="comp-name">Посуточная</h3>
-          <p class="comp-sub">Выше доход, активное управление с нашей стороны.</p>
-        </div>
-        <ul class="comp-rows">
-          <li><span class="ck">Потенциальный доход</span><span class="cv">Высокий</span></li>
-          <li><span class="ck">Стабильность</span><span class="cv">Средняя</span></li>
-          <li><span class="ck">Кому подходит</span><span class="cv">Локации с туристами</span></li>
-          <li><span class="ck">Жильцов ищем</span><span class="cv">Мы</span></li>
-          <li><span class="ck">Комиссия</span><span class="cv">28%</span></li>
-          <li><span class="ck">Риск простоя</span><span class="cv">Есть, сглаживаем</span></li>
-        </ul>
-        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator" data-calc-model="daily">Рассчитать</button></div>
-      </article>
-
-      <article class="comp-card feature" data-model="longterm">
-        <div class="comp-head">
-          <span class="comp-tag">Баланс</span>
-          <h3 class="comp-name">Долгосрочная</h3>
-          <p class="comp-sub">Стабильный доход с минимумом операционных забот.</p>
-        </div>
-        <ul class="comp-rows">
-          <li><span class="ck">Потенциальный доход</span><span class="cv">Средний</span></li>
-          <li><span class="ck">Стабильность</span><span class="cv">Высокая</span></li>
-          <li><span class="ck">Кому подходит</span><span class="cv">Большинству квартир</span></li>
-          <li><span class="ck">Жильцов ищем</span><span class="cv">Мы</span></li>
-          <li><span class="ck">Комиссия</span><span class="cv">12%</span></li>
-          <li><span class="ck">Риск простоя</span><span class="cv">Низкий</span></li>
-        </ul>
-        <div class="comp-foot"><button class="btn btn-accent btn-block" data-scroll="#calculator" data-calc-model="longterm">Рассчитать</button></div>
-      </article>
-
-      <article class="comp-card" data-model="guaranteed">
-        <div class="comp-head">
-          <span class="comp-tag">Без рисков</span>
-          <h3 class="comp-name">Гарантированная</h3>
-          <p class="comp-sub">Фиксированный платёж каждый месяц независимо от простоев.</p>
-        </div>
-        <ul class="comp-rows">
-          <li><span class="ck">Потенциальный доход</span><span class="cv">Фикс 75%</span></li>
-          <li><span class="ck">Стабильность</span><span class="cv">Максимальная</span></li>
-          <li><span class="ck">Кому подходит</span><span class="cv">Кто хочет предсказуемость</span></li>
-          <li><span class="ck">Жильцов ищем</span><span class="cv">Мы</span></li>
-          <li><span class="ck">Комиссия</span><span class="cv">25%, в ставке</span></li>
-          <li><span class="ck">Риск простоя</span><span class="cv">Берём на себя</span></li>
-        </ul>
-        <div class="comp-foot"><button class="btn btn-outline btn-block" data-scroll="#calculator" data-calc-model="guaranteed">Рассчитать</button></div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- ============ HOW IT WORKS ============ -->
 <section class="section bg-white" id="how">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Как это работает</p>
+      <p class="eyebrow">пять простых шагов</p>
       <h2 class="display">Пять шагов до первого платежа</h2>
     </div>
     <div class="steps reveal">
-      <div class="step"><div class="step-num">01</div><h3>Заявка</h3><p>Оставляете заявку — перезваниваем в течение рабочего дня.</p></div>
+      <div class="step"><div class="step-num">01</div><h3>Заявка</h3><p>Вы заполняете форму — мы перезваниваем в течение рабочего дня.</p></div>
       <div class="step"><div class="step-num">02</div><h3>Оценка</h3><p>Оцениваем квартиру и подбираем оптимальную модель аренды.</p></div>
       <div class="step"><div class="step-num">03</div><h3>Договор</h3><p>Подписываем прозрачный договор управления — онлайн или в офисе.</p></div>
-      <div class="step"><div class="step-num">04</div><h3>Заселение</h3><p>Находим проверенных жильцов, готовим квартиру и заселяем.</p></div>
-      <div class="step"><div class="step-num">05</div><h3>Доход</h3><p>Получаете арендный платёж и отчёт каждый месяц.</p></div>
+      <div class="step"><div class="step-num">04</div><h3>Заселение</h3><p>Менеджер находит и заселяет проверенных жильцов, остаётся на связи 24/7.</p></div>
+      <div class="step"><div class="step-num">05</div><h3>Доход</h3><p>Вы получаете арендный платёж и отчёт каждый месяц.</p></div>
     </div>
   </div>
 </section>
@@ -886,56 +903,51 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 <section class="section bg-mint" id="advantages">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Почему Унистрой</p>
-      <h2 class="display">Надёжность девелопера&nbsp;— в каждой детали</h2>
+      <p class="eyebrow eyebrow-dashed">— Унистрой — это надёжно</p>
+      <h2 class="display">Профессиональный подход<br>к управлению вашей недвижимостью</h2>
     </div>
     <div class="grid grid-4 reveal">
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><h3>Прозрачные выплаты</h3><p>Личный кабинет с историей платежей и отчётами по вашей квартире.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><h3>Проверенные жильцы</h3><p>Отбор и верификация арендаторов: документы, доходы, история.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Юридическая защита</h3><p>Договоры, депозиты и страхование имущества от ущерба.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14l4-4 3 3 5-5 4 4"/><path d="M3 20h18"/></svg></span><h3>Клининг и сервис</h3><p>Профессиональная уборка и обслуживание между жильцами.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l9-7 9 7v11z"/><path d="M9 21v-7h6v7"/></svg></span><h3>Сила бренда</h3><p>За управлением стоит крупный девелопер с репутацией и масштабом.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v5h5M9 14h6"/></svg></span><h3>Налоговое сопровождение</h3><p>Берём на себя декларации, отчётность и взаимодействие с ФНС.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Контроль состояния</h3><p>Регулярные проверки квартиры и фотоотчёты о её состоянии.</p></article>
-      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Ежемесячная отчётность</h3><p>Понятный отчёт: доход, расходы, загрузка и состояние объекта.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><h3>Прозрачные выплаты</h3><p>Личный кабинет с историей платежей и всеми документами.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><h3>Проверенные жильцы</h3><p>Отбор и проверка арендаторов: смотрим на документы, уровень дохода, историю.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Юридическая защита</h3><p>Профессионально составленные договоры, депозиты, страхование имущества от ущерба.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14l4-4 3 3 5-5 4 4"/><path d="M3 20h18"/></svg></span><h3>Клининг и сервис</h3><p>Профессиональная уборка и обслуживание между жильцами без вашего участия.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l9-7 9 7v11z"/><path d="M9 21v-7h6v7"/></svg></span><h3>Сила бренда</h3><p>Вашим активом управляет не частник, а федеральный девелопер с 30-летней историей.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l5 5v13H6z"/><path d="M14 3v5h5M9 14h6"/></svg></span><h3>Налоговое сопровождение</h3><p>Консультируем по налоговым декларациям, отчётам и взаимодействию с ФНС.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Полный контроль</h3><p>Регулярные проверки квартиры и фотоотчёты о её состоянии.</p></article>
+      <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Ежемесячная отчётность</h3><p>Отчитываемся о доходе, расходах, загрузке и состоянии квартиры каждый месяц.</p></article>
     </div>
   </div>
 </section>
 
-<!-- ============ INCLUDED ============ -->
-<section class="section bg-white" id="included">
+<!-- ============ OWNER APP ============ -->
+<section class="section bg-mint" id="app">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Что входит в услугу</p>
-      <h2 class="display">Всё включено — от поиска жильца до выплаты</h2>
-    </div>
-    <div class="incl reveal">
-      <div class="incl-group">
-        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>Жильцы и заселение</h3>
-        <ul class="incl-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Поиск и проверка арендаторов</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Показы квартиры и переговоры</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Заселение и выселение по акту</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Коммуникация с жильцами 24/7</li>
-        </ul>
+    <div class="app-showcase reveal">
+      <div class="app-copy">
+        <div class="app-intro">
+          <p class="eyebrow">Аренда у вас в кармане</p>
+          <h2 class="display">Контролируйте свою недвижимость одним приложением</h2>
+        </div>
+        <div class="app-features">
+          <article class="app-feature">
+            <span class="app-feature-no" aria-hidden="true">01</span>
+            <div>
+              <h3>Мгновенный доступ к документам</h3>
+              <p>Все акты, договоры, ежемесячные отчёты и история аренды хранятся в едином цифровом архиве приложения.</p>
+            </div>
+          </article>
+          <article class="app-feature">
+            <span class="app-feature-no" aria-hidden="true">02</span>
+            <div>
+              <h3>Прямая связь с менеджером</h3>
+              <p>Решайте любые вопросы в чате поддержки — история обращений и статусы задач всегда будут под рукой.</p>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="incl-group">
-        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14l4-4 3 3 5-5 4 4"/><path d="M3 20h18"/></svg></span>Обслуживание квартиры</h3>
-        <ul class="incl-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Профессиональный клининг</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Текущий ремонт и мелкий сервис</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Контроль состояния и фотоотчёты</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Страхование имущества</li>
-        </ul>
-      </div>
-      <div class="incl-group">
-        <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>Деньги и отчётность</h3>
-        <ul class="incl-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Контроль и приём платежей</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Ежемесячные выплаты собственнику</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Налоговая отчётность</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Прозрачный отчёт каждый месяц</li>
-        </ul>
+      <div class="app-device" aria-label="Интерфейс приложения Унистрой Аренда">
+        <p class="app-device-label">Личный кабинет собственника</p>
+        <img src="img/owner-dashboard-iphone.png" alt="Экран приложения Унистрой Аренда с обзором дохода и квартир">
       </div>
     </div>
   </div>
@@ -1030,13 +1042,13 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
   <div class="container">
     <div class="cta-final">
       <div class="reveal">
-        <p class="eyebrow">Оставить заявку</p>
-        <h2 class="display">Узнайте доход вашей квартиры</h2>
-        <p class="lead" style="margin-top:18px">Оставьте контакты — менеджер департамента аренды свяжется с вами в течение рабочего дня, оценит квартиру и предложит подходящую модель аренды.</p>
+        <p class="eyebrow">Последний шаг</p>
+        <h2 class="display">Получите персональный расчёт для своей квартиры</h2>
+        <p class="lead" style="margin-top:18px">Заполните форму — менеджер департамента аренды свяжется с вами, рассчитает доход и поможет подобрать тариф под ваши цели.</p>
         <ul class="pill-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Перезвоним в течение рабочего дня</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Расчёт дохода под вашу квартиру</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Без давления и навязывания</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Свяжемся в течение одного рабочего дня</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Проведём индивидуальную консультацию</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Без спама, давления и навязывания</li>
         </ul>
       </div>
 
@@ -1139,7 +1151,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 /* ---- CONFIG: все коэффициенты в одном месте ---- */
 const CONFIG = {
   baseRentMonthly: { studio: 40000, r1: 45000, r2: 60000, r3: 70000 }, // долгосрочная, ₽/мес (тип ремонта «Комфорт»)
-  dailyRateByType: { studio: 5000, r1: 5000, r2: 5000, r3: 5000 },     // посуточная, ₽/сутки — пока единая ставка для всех типов
+  dailyRateByType: { studio: 5000, r1: 6000, r2: 7000, r3: 8000 },     // посуточная, ₽/сутки
   dailyDaysPerYear: 265,       // занятость посуточной, суток в год
   guaranteedShare: 0.75,       // гарант. платёж = 75% рыночной долгосрочной (комиссия 25% в ставке)
   commission: { longterm: 0.12, daily: 0.28, guaranteed: 0 }, // комиссия УК
@@ -1344,8 +1356,9 @@ function initCalculator() {
   input.addEventListener('input', () => {
     let v = +input.value.replace(/\D/g, '');
     if (isNaN(v)) v = CONFIG.price.min;
-    state.price = v;
-    slider.value = Math.min(Math.max(v, CONFIG.price.min), CONFIG.price.max);
+    const clamped = Math.min(Math.max(v, CONFIG.price.min), CONFIG.price.max);
+    state.price = clamped;
+    slider.value = clamped;
     render();
   });
   input.addEventListener('blur', () => {
@@ -1423,6 +1436,27 @@ function initMenu() {
   if (closeBtn) closeBtn.addEventListener('click', () => toggle(false));
   backdrop.addEventListener('click', () => toggle(false));
   menu.querySelectorAll('a, button[data-scroll]').forEach(el => el.addEventListener('click', () => toggle(false)));
+
+  document.addEventListener('keydown', (e) => {
+    if (!menu.classList.contains('open')) return;
+    if (e.key === 'Escape') {
+      toggle(false);
+      burger.focus();
+      return;
+    }
+    if (e.key !== 'Tab') return;
+    const focusable = Array.from(menu.querySelectorAll('a, button')).filter(el => el.offsetParent !== null);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
 }
 
 /* ---- scroll reveal ---- */
