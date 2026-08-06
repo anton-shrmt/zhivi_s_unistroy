@@ -1,4 +1,44 @@
 @font-face {
+    font-family: "TT Norms Pro Expanded";
+    src: url("tt-norms-pro-expanded-extralight-1785469122-0/TTNormsProExp-XLt.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Norms Pro Expanded";
+    src: url("tt-norms-pro-expanded-light-1785469087-0/TTNormsProExp-Lt.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Norms Pro Expanded";
+    src: url("tt-norms-pro-expanded-medium-1785468998-0/TTNormsProExp-Md.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Norms Pro Expanded";
+    src: url("tt-norms-pro-expanded-demibold-1785469016-0/TTNormsProExp-DmBd.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Norms Pro Expanded";
+    src: url("tt-norms-pro-expanded-bold-1785469038-0/TTNormsProExp-Bd.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'TT Norms Pro';
     src: url('TTNormsPro-Bold.eot');
     src: local('TT Norms Pro Bold'), local('TTNormsPro-Bold'),
@@ -231,4 +271,3 @@
     font-style: italic;
     font-display: swap;
 }
-
