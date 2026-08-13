@@ -598,9 +598,11 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
     radial-gradient(900px 500px at 88% -10%, rgba(165,255,0,0.10), transparent 60%),
     radial-gradient(700px 500px at -5% 110%, rgba(165,255,0,0.05), transparent 60%);
 }
-/* На тёмном фоне тёмный текст под лаймовой подсветкой не читается:
-   строка становится светлой, лаймовая черта остаётся акцентом. */
-.header-dark-mode .hero h1 .em { color: var(--pg-text); }
+/* На тёмном фоне лаймовая подсветка перестаёт работать: она проходит по
+   нижней части букв, и светлый текст садится на лайм. Убираем подсветку,
+   красим саму строку в лайм — этим приёмом на тёмных поверхностях уже
+   набраны eyebrow, цифры доверия и числа в плашке hero-float. */
+.header-dark-mode .hero h1 .em { color: var(--accent); background-image: none; }
 .header-dark-mode .trust-num { color: var(--accent); }
 .header-dark-mode .hero-trust-note { color: var(--pg-text); }
 .header-dark-mode .hero-float { background: var(--pg-surface-3); color: var(--pg-text); }
@@ -667,6 +669,20 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .header-dark-mode .bg-dark .form-card .consent,
 .header-dark-mode .bg-dark .form-card .form-alt,
 .header-dark-mode .bg-dark .form-card .form-alt > span { color: #C7D4D4; }
+
+/* Ползунки: в тёмной теме --mint-2 совпадает с фоном панели калькулятора
+   (#263535), и дорожка исчезает — виден только бегунок. Дорожке даём
+   отдельный тон, кольцо бегунка красим в цвет панели: оно читается как
+   вырез вокруг лайма, а не как белая точка. */
+.header-dark-mode input[type="range"] { background: var(--line-strong); }
+.header-dark-mode input[type="range"]::-webkit-slider-thumb {
+  border-color: var(--pg-surface-3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+.header-dark-mode input[type="range"]::-moz-range-thumb {
+  border-color: var(--pg-surface-3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
 
 /* --- тени на тёмном фоне не читаются, заменяем контуром --- */
 .header-dark-mode .card,
