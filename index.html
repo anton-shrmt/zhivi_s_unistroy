@@ -783,7 +783,9 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .uh-menu > ul > li { display: flex; align-items: center; height: 4.4rem; }
 .uh-menu-link { position: relative; display: inline-flex; align-items: center; font-size: 1.5rem; font-weight: 500; line-height: 1; color: var(--u-text-primary); white-space: nowrap; }
 .uh-menu-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -.4rem; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .2s var(--ease); }
-.uh-menu-link:hover::after, .uh-menu-link[aria-expanded="true"]::after, .uh-menu-link--current::after { transform: scaleX(1); }
+/* Подчёркивание только по наведению и у раскрытого пункта, как на unistroy.ru:
+   постоянной пометки текущего раздела в этом ряду нет. */
+.uh-menu-link:hover::after, .uh-menu-link[aria-expanded="true"]::after { transform: scaleX(1); }
 .uh-menu-link[aria-expanded="true"] { color: var(--u-text-secondary); }
 .uh-gift { display: inline-flex; align-items: center; gap: 1rem; height: 3.6rem; padding: 0 .1rem 0 1.2rem; border: 1px solid #364b4b; border-radius: 1000px; background: #e3ebeb; color: #263535; font-family: var(--u-font-ex); font-size: 1.5rem; font-weight: 600; line-height: 1; white-space: nowrap; }
 .uh-gift-ic { display: grid; place-items: center; width: 3.2rem; height: 3.2rem; flex: none; border-radius: 50%; background: #edfff5; }
@@ -993,7 +995,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
           <nav class="uh-menu" aria-label="Основная навигация Унистрой">
             <ul>
               <li><button class="uh-menu-link" id="purchaseBtn" type="button" aria-expanded="false" aria-controls="purchaseMenu" data-dd="purchase">Способы покупки</button></li>
-              <li><a class="uh-menu-link uh-menu-link--current" href="#top" aria-current="page">Аренда</a></li>
+              <li><a class="uh-menu-link" href="#top" aria-current="page">Аренда</a></li>
               <li><a class="uh-menu-link" href="https://unistroy.ru/actions">Акции</a></li>
               <li><a class="uh-gift" href="https://unistroy.ru/30-years">Дарим квартиру<span class="uh-gift-ic"><img src="img/gift.webp" alt="" width="30" height="30"></span></a></li>
             </ul>
