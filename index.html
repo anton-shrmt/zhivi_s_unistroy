@@ -918,6 +918,12 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .uh.is-stage .uh-nav-row { display: none; }
 .uh.is-stage .uh-stage-row { display: flex; }
 .uh.is-stage .uh-rentnav, .uh.is-menu .uh-rentnav { display: none; }
+/* Пока меню открыто, body получает overflow: hidden, и липкая шапка
+   теряет прокручиваемого предка: на прокрученной странице она уезжала
+   за верх экрана вместе с крестиком, и закрыть меню было нечем.
+   На unistroy.ru шапка position: fixed, поэтому на время открытого меню
+   прижимаем её так же. Отступ body компенсирует выпадение из потока. */
+.uh.is-menu { position: fixed; top: 0; left: 0; right: 0; }
 .uh-stage-title { margin: 0; font-family: var(--u-font-ex); font-size: 2rem; font-weight: 600; line-height: 1.1; color: var(--u-text-primary); }
 .uh-back { display: inline-flex; align-items: center; gap: .8rem; height: 3.6rem; padding: 0 1.2rem; border-radius: 1000px; background: var(--u-bg-secondary); color: var(--u-text-primary); font-family: var(--u-font-ex); font-size: 1.5rem; font-weight: 600; line-height: 1; }
 .uh-back svg { width: 1.8rem; height: 1.8rem; }
@@ -2130,6 +2136,9 @@ function initHeader() {
     menu.setAttribute('aria-hidden', String(!open));
     if (open) menu.removeAttribute('inert'); else menu.setAttribute('inert', '');
     document.body.style.overflow = open ? 'hidden' : '';
+    document.body.style.paddingTop = open
+      ? getComputedStyle(document.documentElement).getPropertyValue('--header-offset').trim()
+      : '';
     if (!open) { history.length = 0; showStage('main'); }
   };
   burger.addEventListener('click', () => setMenu(!menu.classList.contains('is-open')));
