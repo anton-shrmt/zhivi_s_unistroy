@@ -1,0 +1,23 @@
+{
+  "privacy": {
+    "url": "policy/privacy.pdf",
+    "version": "7595d73b0336df3e",
+    "sha256": "7595d73b0336df3e1ba1f0b64649eb851ea7401fbf86b7a5098f77845cfb6098",
+    "source": "1.2. Политика_обработки_ПД_с_Приложением_сайт.docx",
+    "sourceSha256": "e96d9a9a8dfdd6a85dbe83bdd0823afa5476eb3d14c492b22808ad64e7534251"
+  },
+  "personal-data-consent": {
+    "url": "policy/personal-data-consent.pdf",
+    "version": "977f4daa6417b468",
+    "sha256": "977f4daa6417b468976ee0edf1a65b8b349d5070069469ee7f4b5797dfa8de10",
+    "source": "Согласие_на_обработку_ПД_пользователя_сайта.docx",
+    "sourceSha256": "78947746cf6911f5f31639010f9df0b9d42a060260344c26a288258fc0e61bbc"
+  },
+  "marketing-consent": {
+    "url": "policy/marketing-consent.pdf",
+    "version": "699e075b252ae4cf",
+    "sha256": "699e075b252ae4cf8b41036786c086b9c4f6121174525533fd5a2e4b3f09f871",
+    "source": "Согласие_на_получение_рекламы_для_сайта.docx",
+    "sourceSha256": "ef2ecdb9266745442ec570e55a41d3dfa8b5ffb7832b71c8cda547c0047841d0"
+  }
+}

@@ -1,0 +1,968 @@
+{
+  "reference": "https://unistroy.ru/",
+  "city": "Казань",
+  "date": "2026-10-05",
+  "browser": "Codex in-app browser / Chromium on macOS",
+  "toleranceCssPx": 0.1,
+  "exclusions": [
+    "Динамический телефон Roistat и строка заказа звонка рядом с ним",
+    "Содержимое страницы за общим меню и дополнительная навигация аренды",
+    "Промежуточные кадры анимации, антиалиасинг и сжатие снимков"
+  ],
+  "states": [
+    {
+      "label": "1280-dark-about",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-apartments",
+      "comparedTextNodes": 33,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-blog",
+      "comparedTextNodes": 15,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-callback",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-city",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-clients",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-closed",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-parking",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-projects",
+      "comparedTextNodes": 54,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-purchase",
+      "comparedTextNodes": 24,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-dark-storages",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-about",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-apartments",
+      "comparedTextNodes": 33,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-blog",
+      "comparedTextNodes": 15,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-callback",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-city",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-clients",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-closed",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-parking",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-projects",
+      "comparedTextNodes": 54,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-purchase",
+      "comparedTextNodes": 24,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1280-light-storages",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-about",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-apartments",
+      "comparedTextNodes": 33,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-blog",
+      "comparedTextNodes": 15,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-callback",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-city",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-clients",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-closed",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-parking",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-projects",
+      "comparedTextNodes": 54,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-purchase",
+      "comparedTextNodes": 24,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-dark-storages",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-about",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-apartments",
+      "comparedTextNodes": 33,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-blog",
+      "comparedTextNodes": 15,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-callback",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-city",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-clients",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-closed",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-parking",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-projects",
+      "comparedTextNodes": 54,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-purchase",
+      "comparedTextNodes": 24,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1440-light-storages",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-about",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-apartments",
+      "comparedTextNodes": 33,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-blog",
+      "comparedTextNodes": 15,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-callback",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-city",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-clients",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-closed",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-parking",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-projects",
+      "comparedTextNodes": 54,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-purchase",
+      "comparedTextNodes": 24,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-dark-storages",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-about",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-apartments",
+      "comparedTextNodes": 33,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-blog",
+      "comparedTextNodes": 15,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-callback",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-city",
+      "comparedTextNodes": 17,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-clients",
+      "comparedTextNodes": 18,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-closed",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-parking",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-projects",
+      "comparedTextNodes": 54,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-purchase",
+      "comparedTextNodes": 24,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "1920-light-storages",
+      "comparedTextNodes": 34,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-about",
+      "comparedTextNodes": 5,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-apartments",
+      "comparedTextNodes": 21,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-blog",
+      "comparedTextNodes": 7,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-callback",
+      "comparedTextNodes": 13,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-city",
+      "comparedTextNodes": 14,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-clients",
+      "comparedTextNodes": 9,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-closed",
+      "comparedTextNodes": 0,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-main",
+      "comparedTextNodes": 6,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-parking",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-projects",
+      "comparedTextNodes": 42,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-purchase",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-realty",
+      "comparedTextNodes": 2,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-dark-storages",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-about",
+      "comparedTextNodes": 5,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-apartments",
+      "comparedTextNodes": 21,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-blog",
+      "comparedTextNodes": 7,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-callback",
+      "comparedTextNodes": 13,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-city",
+      "comparedTextNodes": 14,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-clients",
+      "comparedTextNodes": 9,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-closed",
+      "comparedTextNodes": 0,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-main",
+      "comparedTextNodes": 6,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-parking",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-projects",
+      "comparedTextNodes": 42,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-purchase",
+      "comparedTextNodes": 10,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-realty",
+      "comparedTextNodes": 2,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "390-light-storages",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-about",
+      "comparedTextNodes": 8,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-apartments",
+      "comparedTextNodes": 21,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-blog",
+      "comparedTextNodes": 7,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-callback",
+      "comparedTextNodes": 13,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-city",
+      "comparedTextNodes": 14,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-clients",
+      "comparedTextNodes": 9,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-closed",
+      "comparedTextNodes": 0,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-main",
+      "comparedTextNodes": 6,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-parking",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-projects",
+      "comparedTextNodes": 42,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-purchase",
+      "comparedTextNodes": 16,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-realty",
+      "comparedTextNodes": 2,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-dark-storages",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-about",
+      "comparedTextNodes": 8,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-apartments",
+      "comparedTextNodes": 21,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-blog",
+      "comparedTextNodes": 7,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-callback",
+      "comparedTextNodes": 13,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-city",
+      "comparedTextNodes": 14,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-clients",
+      "comparedTextNodes": 9,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-closed",
+      "comparedTextNodes": 0,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-main",
+      "comparedTextNodes": 6,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-parking",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-projects",
+      "comparedTextNodes": 42,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-purchase",
+      "comparedTextNodes": 16,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-realty",
+      "comparedTextNodes": 2,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    },
+    {
+      "label": "768-light-storages",
+      "comparedTextNodes": 22,
+      "differences": [],
+      "noOverflow": true,
+      "imagesLoaded": true,
+      "screenshotsPresent": true
+    }
+  ],
+  "regression": {
+    "mainUnchanged": true,
+    "footerUnchanged": true,
+    "legal": {
+      "privacy": true,
+      "personal-data-consent": true,
+      "marketing-consent": true
+    },
+    "javascriptSyntax": true
+  }
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "test": "mobile burger",
+    "expected": "main",
+    "overflow": "hidden",
+    "state": "main",
+    "pass": true
+  },
+  {
+    "test": "mobile realty",
+    "expected": "realty",
+    "overflow": "hidden",
+    "state": "realty",
+    "pass": true
+  },
+  {
+    "test": "mobile projects",
+    "expected": "projects",
+    "overflow": "hidden",
+    "state": "projects",
+    "pass": true
+  },
+  {
+    "test": "mobile back",
+    "expected": "realty",
+    "overflow": "hidden",
+    "state": "realty",
+    "pass": true
+  },
+  {
+    "test": "mobile back",
+    "expected": "main",
+    "overflow": "hidden",
+    "state": "main",
+    "pass": true
+  },
+  {
+    "test": "mobile burger",
+    "expected": "closed",
+    "overflow": "",
+    "state": "closed",
+    "pass": true
+  },
+  {
+    "test": "mobile Enter / Escape",
+    "pass": false
+  },
+  {
+    "test": "mobile Enter / Escape (after focus fix)",
+    "focus": "burger",
+    "pass": true
+  },
+  {
+    "test": "realty click 1",
+    "state": "projects",
+    "pass": true
+  },
+  {
+    "test": "realty click 2",
+    "state": "projects",
+    "pass": false
+  },
+  {
+    "test": "purchase click 1",
+    "state": "purchase",
+    "pass": true
+  },
+  {
+    "test": "purchase click 2",
+    "state": "purchase",
+    "pass": false
+  },
+  {
+    "test": "realty click 1 after hover fix",
+    "state": "projects",
+    "pass": true
+  },
+  {
+    "test": "realty click 2 after hover fix",
+    "state": "closed",
+    "pass": true
+  },
+  {
+    "test": "purchase click 1 after hover fix",
+    "state": "purchase",
+    "pass": true
+  },
+  {
+    "test": "purchase click 2 after hover fix",
+    "state": "closed",
+    "pass": true
+  },
+  {
+    "test": "desktop Enter / category End",
+    "focus": "storages",
+    "pass": true
+  },
+  {
+    "test": "desktop Escape unlock",
+    "pass": true
+  },
+  {
+    "test": "callback required fields / no false success",
+    "focus": "name",
+    "pass": true,
+    "unchecked": false
+  },
+  {
+    "test": "callback close and focus",
+    "pass": true
+  },
+  {
+    "test": "desktop Space opens purchase",
+    "pass": true
+  },
+  {
+    "test": "resize closes desktop and unlocks",
+    "pass": true
+  },
+  {
+    "test": "callback form checkboxes only",
+    "fields": [
+      {
+        "checked": false,
+        "name": "taxi",
+        "required": false
+      },
+      {
+        "checked": false,
+        "name": "personal-consent",
+        "required": true
+      },
+      {
+        "checked": false,
+        "name": "distribution-consent",
+        "required": false
+      }
+    ],
+    "pass": true
+  }
+]

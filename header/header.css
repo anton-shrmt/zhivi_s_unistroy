@@ -1,0 +1,41 @@
+/* Integration only. Visual component rules live in reference.css. */
+#sharedHeader {
+  --ref-unit: 12px;
+  display: block;
+  font-family: var(--base-font), serif;
+  font-size: calc(1.6 * var(--ref-unit));
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  min-height: var(--header-h);
+}
+@media (max-width:1920.98px) { #sharedHeader { --ref-unit:calc(6px + .2778vw); } }
+@media (max-width:1439.98px) { #sharedHeader { --ref-unit:.6944vw; } }
+@media (max-width:1279.98px) { #sharedHeader { --ref-unit:1.3044vw; } }
+@media (max-width:767.98px) { #sharedHeader { --ref-unit:10px; } }
+#sharedHeader > header { position:relative; top:0; transition:none; }
+#sharedHeader [data-action] { cursor:pointer; }
+#sharedHeader [role="switch"] { pointer-events:auto; }
+#sharedHeader .swiper-pagination-bullet[data-action] { pointer-events:auto; cursor:pointer; }
+#sharedHeader [data-action]:focus-visible, #sharedHeader a:focus-visible,
+#sharedHeader input:focus-visible, #sharedHeader button:focus-visible {
+  outline:2px solid var(--accent-500); outline-offset:3px;
+}
+#sharedHeader [data-action] { -webkit-user-select:none; user-select:none; }
+#sharedHeader ._VModal_1abu0_15 { z-index:1000; }
+#sharedHeader ._VModal_1abu0_15[hidden] { display:none; }
+#sharedHeader .ref-form-error { color:var(--text-negative); margin:12px 0 0; font-size:14px; }
+#sharedHeader .ref-form-success { padding:24px; color:var(--text-primary); font-size:18px; }
+#sharedHeader [aria-invalid="true"] { outline:1px solid var(--text-negative); }
+#siteHeader.ref-open > .uh-rentnav { visibility:hidden; }
+#siteHeader { overflow:visible; }
+/* The transparent top padding must not intercept the back/close buttons. */
+@media (max-width:1279.98px) {
+  #sharedHeader ._MobileMenu_k98e5_15 { pointer-events:none; }
+  #sharedHeader ._wrapper_k98e5_22 { pointer-events:auto; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #sharedHeader *, #sharedHeader *::before, #sharedHeader *::after { transition:none !important; animation:none !important; }
+}

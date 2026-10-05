@@ -1,0 +1,10 @@
+{
+  "mainUnchanged": true,
+  "footerUnchanged": true,
+  "legal": {
+    "privacy": true,
+    "personal-data-consent": true,
+    "marketing-consent": true
+  },
+  "javascriptSyntax": true
+}

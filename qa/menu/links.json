@@ -1,0 +1,292 @@
+[
+  {
+    "finalUrl": "https://unistroy.ru/actions",
+    "status": 200,
+    "url": "https://unistroy.ru/actions"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/arenda_kv",
+    "status": 200,
+    "url": "https://unistroy.ru/arenda_kv"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/30-years",
+    "status": 200,
+    "url": "https://unistroy.ru/30-years"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/favorites",
+    "status": 200,
+    "url": "https://unistroy.ru/favorites"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects",
+    "status": 200,
+    "url": "https://unistroy.ru/objects"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/art",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/art"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/statum",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/statum"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/unicum_amir",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/unicum_amir"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/unicum_pob",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/unicum_pob"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/qkulagina",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/qkulagina"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/letokzn",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/letokzn"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/tech",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/tech"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/atmos",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/atmos"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/ukod_zales",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/ukod_zales"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/tsarciti",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/tsarciti"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/aqua",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/aqua"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/yes_gorki",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/yes_gorki"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/vesna2",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/vesna2"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/objects/corner_bright",
+    "status": 200,
+    "url": "https://unistroy.ru/objects/corner_bright"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search",
+    "status": 200,
+    "url": "https://unistroy.ru/search"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search?rooms=0&order=price",
+    "status": 200,
+    "url": "https://unistroy.ru/search?rooms=0&order=price"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search/1-komnatnye-kvartiry",
+    "status": 200,
+    "url": "https://unistroy.ru/search/1-komnatnye-kvartiry"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search/2-komnatnye-kvartiry",
+    "status": 200,
+    "url": "https://unistroy.ru/search/2-komnatnye-kvartiry"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search/3-komnatnye-kvartiry",
+    "status": 200,
+    "url": "https://unistroy.ru/search/3-komnatnye-kvartiry"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search?rooms=4&order=price",
+    "status": 200,
+    "url": "https://unistroy.ru/search?rooms=4&order=price"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/search?rooms=5&order=price",
+    "status": 200,
+    "url": "https://unistroy.ru/search?rooms=5&order=price"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking",
+    "status": 200,
+    "url": "https://unistroy.ru/parking"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking/?project=statum",
+    "status": 200,
+    "url": "https://unistroy.ru/parking/?project=statum"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking/?project=unicum_amir",
+    "status": 200,
+    "url": "https://unistroy.ru/parking/?project=unicum_amir"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking/?project=unicum_pob",
+    "status": 200,
+    "url": "https://unistroy.ru/parking/?project=unicum_pob"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking/?project=qkulagina",
+    "status": 200,
+    "url": "https://unistroy.ru/parking/?project=qkulagina"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking/?project=letokzn",
+    "status": 200,
+    "url": "https://unistroy.ru/parking/?project=letokzn"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/parking/?project=vesna2",
+    "status": 200,
+    "url": "https://unistroy.ru/parking/?project=vesna2"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages",
+    "status": 200,
+    "url": "https://unistroy.ru/storages"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages/?project=statum",
+    "status": 200,
+    "url": "https://unistroy.ru/storages/?project=statum"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages/?project=unicum_amir",
+    "status": 200,
+    "url": "https://unistroy.ru/storages/?project=unicum_amir"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages/?project=unicum_pob",
+    "status": 200,
+    "url": "https://unistroy.ru/storages/?project=unicum_pob"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages/?project=qkulagina",
+    "status": 200,
+    "url": "https://unistroy.ru/storages/?project=qkulagina"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages/?project=tech",
+    "status": 200,
+    "url": "https://unistroy.ru/storages/?project=tech"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/storages/?project=vesna2",
+    "status": 200,
+    "url": "https://unistroy.ru/storages/?project=vesna2"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/ipoteka",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/ipoteka"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/rassrochka",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/rassrochka"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/trade-in",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/trade-in"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/lizing",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/lizing"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/materinskij-kapital",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/materinskij-kapital"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/online",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/online"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/calculator",
+    "status": 200,
+    "url": "https://unistroy.ru/oplata/calculator"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/about",
+    "status": 200,
+    "url": "https://unistroy.ru/about"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/about/vacancies",
+    "status": 200,
+    "url": "https://unistroy.ru/about/vacancies"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/blog",
+    "status": 200,
+    "url": "https://unistroy.ru/blog"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/blog/news",
+    "status": 200,
+    "url": "https://unistroy.ru/blog/news"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/blog/expert",
+    "status": 200,
+    "url": "https://unistroy.ru/blog/expert"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/blog/news/igrajte-otkryvajte-novoe-i-poluchite-shans-vyigrat-kvartiru",
+    "status": 200,
+    "url": "https://unistroy.ru/blog/news/igrajte-otkryvajte-novoe-i-poluchite-shans-vyigrat-kvartiru"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/faq",
+    "status": 200,
+    "url": "https://unistroy.ru/faq"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/documents",
+    "status": 200,
+    "url": "https://unistroy.ru/documents"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/service-company",
+    "status": 200,
+    "url": "https://unistroy.ru/service-company"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/standards",
+    "status": 200,
+    "url": "https://unistroy.ru/standards"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/contacts",
+    "status": 200,
+    "url": "https://unistroy.ru/contacts"
+  }
+]

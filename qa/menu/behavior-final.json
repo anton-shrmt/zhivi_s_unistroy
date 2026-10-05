@@ -1,0 +1,20 @@
+{
+  "projectListReachesEnd": true,
+  "visibleLastProjects": [
+    "Царёво СитиЦарёво Ситиот 5.9 млн ₽",
+    "АквамаринАквамаринот 9.3 млн ₽",
+    "ЙЕС ГоркиЙЕС Горкиот 8.3 млн ₽",
+    "Веснаот 11.3 млн ₽",
+    "Брайт Парк"
+  ],
+  "secondCard": true,
+  "escapeUnlock": true,
+  "hoverOpen": true,
+  "outsideClose": true,
+  "modalTabTrap": true,
+  "emptyForm": {
+    "error": true,
+    "focus": "name",
+    "success": false
+  }
+}

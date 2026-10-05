@@ -1,0 +1,391 @@
+{
+  "date": "2026-10-05",
+  "change": "User-approved removal of inventory counts from the static header; prices retained.",
+  "states": [
+    {
+      "width": 1440,
+      "state": "apartments",
+      "cards": [
+        {
+          "details": "от 5.9 млн ₽",
+          "href": "https://unistroy.ru/search",
+          "title": "Все квартиры и апартаменты"
+        },
+        {
+          "details": "от 5.9 млн ₽",
+          "href": "https://unistroy.ru/search?rooms=0&order=price",
+          "title": "Студии"
+        },
+        {
+          "details": "от 6.8 млн ₽",
+          "href": "https://unistroy.ru/search/1-komnatnye-kvartiry",
+          "title": "1-комнатные"
+        },
+        {
+          "details": "от 8.0 млн ₽",
+          "href": "https://unistroy.ru/search/2-komnatnye-kvartiry",
+          "title": "2-комнатные"
+        },
+        {
+          "details": "от 9.1 млн ₽",
+          "href": "https://unistroy.ru/search/3-komnatnye-kvartiry",
+          "title": "3-комнатные"
+        },
+        {
+          "details": "от 18.5 млн ₽",
+          "href": "https://unistroy.ru/search?rooms=4&order=price",
+          "title": "4-комнатные"
+        },
+        {
+          "href": "https://unistroy.ru/search?rooms=5&order=price",
+          "title": "5-комнатные"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "parking",
+      "cards": [
+        {
+          "details": "от 1.1 млн ₽",
+          "href": "https://unistroy.ru/parking",
+          "title": "Все машино-места"
+        },
+        {
+          "details": "Статумот 1.1 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=statum",
+          "title": "Статум"
+        },
+        {
+          "details": "Уникум на Амирханаот 2.2 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=unicum_amir",
+          "title": "Уникум на Амирхана"
+        },
+        {
+          "details": "Уникум на проспекте Победыот 1.7 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=unicum_pob",
+          "title": "Уникум на проспекте Победы"
+        },
+        {
+          "details": "Q на Кулагинаот 1.8 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=qkulagina",
+          "title": "Q на Кулагина"
+        },
+        {
+          "details": "Летоот 1.3 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=letokzn",
+          "title": "Лето"
+        },
+        {
+          "details": "от 1.4 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=vesna2",
+          "title": "Весна"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "storages",
+      "cards": [
+        {
+          "details": "от 226 тыс ₽",
+          "href": "https://unistroy.ru/storages",
+          "title": "Все кладовые"
+        },
+        {
+          "details": "Статумот 342 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=statum",
+          "title": "Статум"
+        },
+        {
+          "details": "Уникум на Амирханаот 440 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=unicum_amir",
+          "title": "Уникум на Амирхана"
+        },
+        {
+          "details": "Уникум на проспекте Победыот 320 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=unicum_pob",
+          "title": "Уникум на проспекте Победы"
+        },
+        {
+          "details": "Q на Кулагинаот 226 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=qkulagina",
+          "title": "Q на Кулагина"
+        },
+        {
+          "details": "Уникод на Техническойот 380 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=tech",
+          "title": "Уникод на Технической"
+        },
+        {
+          "details": "от 530 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=vesna2",
+          "title": "Весна"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "apartments",
+      "cards": [
+        {
+          "details": "от 5.9 млн ₽",
+          "href": "https://unistroy.ru/search",
+          "title": "Все квартиры и апартаменты"
+        },
+        {
+          "details": "от 5.9 млн ₽",
+          "href": "https://unistroy.ru/search?rooms=0&order=price",
+          "title": "Студии"
+        },
+        {
+          "details": "от 6.8 млн ₽",
+          "href": "https://unistroy.ru/search/1-komnatnye-kvartiry",
+          "title": "1-комнатные"
+        },
+        {
+          "details": "от 8.0 млн ₽",
+          "href": "https://unistroy.ru/search/2-komnatnye-kvartiry",
+          "title": "2-комнатные"
+        },
+        {
+          "details": "от 9.1 млн ₽",
+          "href": "https://unistroy.ru/search/3-komnatnye-kvartiry",
+          "title": "3-комнатные"
+        },
+        {
+          "details": "от 18.5 млн ₽",
+          "href": "https://unistroy.ru/search?rooms=4&order=price",
+          "title": "4-комнатные"
+        },
+        {
+          "href": "https://unistroy.ru/search?rooms=5&order=price",
+          "title": "5-комнатные"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "parking",
+      "cards": [
+        {
+          "details": "от 1.1 млн ₽",
+          "href": "https://unistroy.ru/parking",
+          "title": "Все машино-места"
+        },
+        {
+          "details": "Статумот 1.1 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=statum",
+          "title": "Статум"
+        },
+        {
+          "details": "Уникум на Амирханаот 2.2 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=unicum_amir",
+          "title": "Уникум на Амирхана"
+        },
+        {
+          "details": "Уникум на проспекте Победыот 1.7 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=unicum_pob",
+          "title": "Уникум на проспекте Победы"
+        },
+        {
+          "details": "Q на Кулагинаот 1.8 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=qkulagina",
+          "title": "Q на Кулагина"
+        },
+        {
+          "details": "Летоот 1.3 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=letokzn",
+          "title": "Лето"
+        },
+        {
+          "details": "от 1.4 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=vesna2",
+          "title": "Весна"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "storages",
+      "cards": [
+        {
+          "details": "от 226 тыс ₽",
+          "href": "https://unistroy.ru/storages",
+          "title": "Все кладовые"
+        },
+        {
+          "details": "Статумот 342 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=statum",
+          "title": "Статум"
+        },
+        {
+          "details": "Уникум на Амирханаот 440 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=unicum_amir",
+          "title": "Уникум на Амирхана"
+        },
+        {
+          "details": "Уникум на проспекте Победыот 320 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=unicum_pob",
+          "title": "Уникум на проспекте Победы"
+        },
+        {
+          "details": "Q на Кулагинаот 226 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=qkulagina",
+          "title": "Q на Кулагина"
+        },
+        {
+          "details": "Уникод на Техническойот 380 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=tech",
+          "title": "Уникод на Технической"
+        },
+        {
+          "details": "от 530 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=vesna2",
+          "title": "Весна"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "apartments",
+      "cards": [
+        {
+          "details": "от 5.9 млн ₽",
+          "href": "https://unistroy.ru/search",
+          "title": "Все квартиры и апартаменты"
+        },
+        {
+          "details": "от 5.9 млн ₽",
+          "href": "https://unistroy.ru/search?rooms=0&order=price",
+          "title": "Студии"
+        },
+        {
+          "details": "от 6.8 млн ₽",
+          "href": "https://unistroy.ru/search/1-komnatnye-kvartiry",
+          "title": "1-комнатные"
+        },
+        {
+          "details": "от 8.0 млн ₽",
+          "href": "https://unistroy.ru/search/2-komnatnye-kvartiry",
+          "title": "2-комнатные"
+        },
+        {
+          "details": "от 9.1 млн ₽",
+          "href": "https://unistroy.ru/search/3-komnatnye-kvartiry",
+          "title": "3-комнатные"
+        },
+        {
+          "details": "от 18.5 млн ₽",
+          "href": "https://unistroy.ru/search?rooms=4&order=price",
+          "title": "4-комнатные"
+        },
+        {
+          "href": "https://unistroy.ru/search?rooms=5&order=price",
+          "title": "5-комнатные"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "parking",
+      "cards": [
+        {
+          "details": "от 1.1 млн ₽",
+          "href": "https://unistroy.ru/parking",
+          "title": "Все машино-места"
+        },
+        {
+          "details": "Статумот 1.1 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=statum",
+          "title": "Статум"
+        },
+        {
+          "details": "Уникум на Амирханаот 2.2 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=unicum_amir",
+          "title": "Уникум на Амирхана"
+        },
+        {
+          "details": "Уникум на проспекте Победыот 1.7 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=unicum_pob",
+          "title": "Уникум на проспекте Победы"
+        },
+        {
+          "details": "Q на Кулагинаот 1.8 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=qkulagina",
+          "title": "Q на Кулагина"
+        },
+        {
+          "details": "Летоот 1.3 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=letokzn",
+          "title": "Лето"
+        },
+        {
+          "details": "от 1.4 млн ₽",
+          "href": "https://unistroy.ru/parking/?project=vesna2",
+          "title": "Весна"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "storages",
+      "cards": [
+        {
+          "details": "от 226 тыс ₽",
+          "href": "https://unistroy.ru/storages",
+          "title": "Все кладовые"
+        },
+        {
+          "details": "Статумот 342 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=statum",
+          "title": "Статум"
+        },
+        {
+          "details": "Уникум на Амирханаот 440 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=unicum_amir",
+          "title": "Уникум на Амирхана"
+        },
+        {
+          "details": "Уникум на проспекте Победыот 320 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=unicum_pob",
+          "title": "Уникум на проспекте Победы"
+        },
+        {
+          "details": "Q на Кулагинаот 226 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=qkulagina",
+          "title": "Q на Кулагина"
+        },
+        {
+          "details": "Уникод на Техническойот 380 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=tech",
+          "title": "Уникод на Технической"
+        },
+        {
+          "details": "от 530 тыс ₽",
+          "href": "https://unistroy.ru/storages/?project=vesna2",
+          "title": "Весна"
+        }
+      ],
+      "counts": [],
+      "overflow": false
+    }
+  ],
+  "pass": true
+}

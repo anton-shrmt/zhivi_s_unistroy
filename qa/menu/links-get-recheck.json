@@ -1,0 +1,38 @@
+[
+  {
+    "finalUrl": "https://unistroy.ru/oplata/ipoteka",
+    "method": "GET",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/ipoteka"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/rassrochka",
+    "method": "GET",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/rassrochka"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/trade-in",
+    "method": "GET",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/trade-in"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/lizing",
+    "method": "GET",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/lizing"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/materinskij-kapital",
+    "method": "GET",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/materinskij-kapital"
+  },
+  {
+    "finalUrl": "https://unistroy.ru/oplata/online",
+    "method": "GET",
+    "status": 500,
+    "url": "https://unistroy.ru/oplata/online"
+  }
+]

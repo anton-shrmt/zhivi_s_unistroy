@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-05",
+  "change": "User-approved removal of catalogue prices, inventory counts and repeated project subtitles from all static header variants.",
+  "states": [
+    {
+      "width": 1440,
+      "state": "apartments",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/search",
+        "https://unistroy.ru/search?rooms=0&order=price",
+        "https://unistroy.ru/search/1-komnatnye-kvartiry",
+        "https://unistroy.ru/search/2-komnatnye-kvartiry",
+        "https://unistroy.ru/search/3-komnatnye-kvartiry",
+        "https://unistroy.ru/search?rooms=4&order=price",
+        "https://unistroy.ru/search?rooms=5&order=price"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "projects",
+      "cardCount": 15,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/objects",
+        "https://unistroy.ru/objects/art",
+        "https://unistroy.ru/objects/statum",
+        "https://unistroy.ru/objects/unicum_amir",
+        "https://unistroy.ru/objects/unicum_pob",
+        "https://unistroy.ru/objects/qkulagina",
+        "https://unistroy.ru/objects/letokzn",
+        "https://unistroy.ru/objects/tech",
+        "https://unistroy.ru/objects/atmos",
+        "https://unistroy.ru/objects/ukod_zales",
+        "https://unistroy.ru/objects/tsarciti",
+        "https://unistroy.ru/objects/aqua",
+        "https://unistroy.ru/objects/yes_gorki",
+        "https://unistroy.ru/objects/vesna2",
+        "https://unistroy.ru/objects/corner_bright"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "parking",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/parking",
+        "https://unistroy.ru/parking/?project=statum",
+        "https://unistroy.ru/parking/?project=unicum_amir",
+        "https://unistroy.ru/parking/?project=unicum_pob",
+        "https://unistroy.ru/parking/?project=qkulagina",
+        "https://unistroy.ru/parking/?project=letokzn",
+        "https://unistroy.ru/parking/?project=vesna2"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "state": "storages",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/storages",
+        "https://unistroy.ru/storages/?project=statum",
+        "https://unistroy.ru/storages/?project=unicum_amir",
+        "https://unistroy.ru/storages/?project=unicum_pob",
+        "https://unistroy.ru/storages/?project=qkulagina",
+        "https://unistroy.ru/storages/?project=tech",
+        "https://unistroy.ru/storages/?project=vesna2"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "projects",
+      "cardCount": 15,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/objects",
+        "https://unistroy.ru/objects/art",
+        "https://unistroy.ru/objects/statum",
+        "https://unistroy.ru/objects/unicum_amir",
+        "https://unistroy.ru/objects/unicum_pob",
+        "https://unistroy.ru/objects/qkulagina",
+        "https://unistroy.ru/objects/letokzn",
+        "https://unistroy.ru/objects/tech",
+        "https://unistroy.ru/objects/atmos",
+        "https://unistroy.ru/objects/ukod_zales",
+        "https://unistroy.ru/objects/tsarciti",
+        "https://unistroy.ru/objects/aqua",
+        "https://unistroy.ru/objects/yes_gorki",
+        "https://unistroy.ru/objects/vesna2",
+        "https://unistroy.ru/objects/corner_bright"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "apartments",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/search",
+        "https://unistroy.ru/search?rooms=0&order=price",
+        "https://unistroy.ru/search/1-komnatnye-kvartiry",
+        "https://unistroy.ru/search/2-komnatnye-kvartiry",
+        "https://unistroy.ru/search/3-komnatnye-kvartiry",
+        "https://unistroy.ru/search?rooms=4&order=price",
+        "https://unistroy.ru/search?rooms=5&order=price"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "parking",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/parking",
+        "https://unistroy.ru/parking/?project=statum",
+        "https://unistroy.ru/parking/?project=unicum_amir",
+        "https://unistroy.ru/parking/?project=unicum_pob",
+        "https://unistroy.ru/parking/?project=qkulagina",
+        "https://unistroy.ru/parking/?project=letokzn",
+        "https://unistroy.ru/parking/?project=vesna2"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "state": "storages",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/storages",
+        "https://unistroy.ru/storages/?project=statum",
+        "https://unistroy.ru/storages/?project=unicum_amir",
+        "https://unistroy.ru/storages/?project=unicum_pob",
+        "https://unistroy.ru/storages/?project=qkulagina",
+        "https://unistroy.ru/storages/?project=tech",
+        "https://unistroy.ru/storages/?project=vesna2"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "projects",
+      "cardCount": 15,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/objects",
+        "https://unistroy.ru/objects/art",
+        "https://unistroy.ru/objects/statum",
+        "https://unistroy.ru/objects/unicum_amir",
+        "https://unistroy.ru/objects/unicum_pob",
+        "https://unistroy.ru/objects/qkulagina",
+        "https://unistroy.ru/objects/letokzn",
+        "https://unistroy.ru/objects/tech",
+        "https://unistroy.ru/objects/atmos",
+        "https://unistroy.ru/objects/ukod_zales",
+        "https://unistroy.ru/objects/tsarciti",
+        "https://unistroy.ru/objects/aqua",
+        "https://unistroy.ru/objects/yes_gorki",
+        "https://unistroy.ru/objects/vesna2",
+        "https://unistroy.ru/objects/corner_bright"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "apartments",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/search",
+        "https://unistroy.ru/search?rooms=0&order=price",
+        "https://unistroy.ru/search/1-komnatnye-kvartiry",
+        "https://unistroy.ru/search/2-komnatnye-kvartiry",
+        "https://unistroy.ru/search/3-komnatnye-kvartiry",
+        "https://unistroy.ru/search?rooms=4&order=price",
+        "https://unistroy.ru/search?rooms=5&order=price"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "parking",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/parking",
+        "https://unistroy.ru/parking/?project=statum",
+        "https://unistroy.ru/parking/?project=unicum_amir",
+        "https://unistroy.ru/parking/?project=unicum_pob",
+        "https://unistroy.ru/parking/?project=qkulagina",
+        "https://unistroy.ru/parking/?project=letokzn",
+        "https://unistroy.ru/parking/?project=vesna2"
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "state": "storages",
+      "cardCount": 7,
+      "dynamicLabels": [],
+      "emptyMetadata": 0,
+      "links": [
+        "https://unistroy.ru/storages",
+        "https://unistroy.ru/storages/?project=statum",
+        "https://unistroy.ru/storages/?project=unicum_amir",
+        "https://unistroy.ru/storages/?project=unicum_pob",
+        "https://unistroy.ru/storages/?project=qkulagina",
+        "https://unistroy.ru/storages/?project=tech",
+        "https://unistroy.ru/storages/?project=vesna2"
+      ],
+      "overflow": false
+    }
+  ],
+  "pass": true
+}

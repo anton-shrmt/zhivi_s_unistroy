@@ -1,0 +1,151 @@
+{
+  "source": "https://unistroy.ru/",
+  "city": "kzn",
+  "capturedOn": "2026-10-05",
+  "items": {
+    "https://unistroy.ru/objects": {
+      "title": "Все проекты",
+      "information": []
+    },
+    "https://unistroy.ru/objects/art": {
+      "title": "АРТ ПРЕМИУМ",
+      "information": []
+    },
+    "https://unistroy.ru/objects/statum": {
+      "title": "Статум",
+      "information": []
+    },
+    "https://unistroy.ru/objects/unicum_amir": {
+      "title": "Уникум на Амирхана",
+      "information": []
+    },
+    "https://unistroy.ru/objects/unicum_pob": {
+      "title": "Уникум на проспекте Победы",
+      "information": []
+    },
+    "https://unistroy.ru/objects/qkulagina": {
+      "title": "Q на Кулагина",
+      "information": []
+    },
+    "https://unistroy.ru/objects/letokzn": {
+      "title": "Лето",
+      "information": []
+    },
+    "https://unistroy.ru/objects/tech": {
+      "title": "Уникод на Технической",
+      "information": []
+    },
+    "https://unistroy.ru/objects/atmos": {
+      "title": "Атмосфера",
+      "information": []
+    },
+    "https://unistroy.ru/objects/ukod_zales": {
+      "title": "Уникод на Залесной",
+      "information": []
+    },
+    "https://unistroy.ru/objects/tsarciti": {
+      "title": "Царёво Сити",
+      "information": []
+    },
+    "https://unistroy.ru/objects/aqua": {
+      "title": "Аквамарин",
+      "information": []
+    },
+    "https://unistroy.ru/objects/yes_gorki": {
+      "title": "ЙЕС Горки",
+      "information": []
+    },
+    "https://unistroy.ru/objects/vesna2": {
+      "title": "Весна",
+      "information": []
+    },
+    "https://unistroy.ru/objects/corner_bright": {
+      "title": "Брайт Парк",
+      "information": []
+    },
+    "https://unistroy.ru/search": {
+      "title": "Все квартиры и апартаменты",
+      "information": []
+    },
+    "https://unistroy.ru/search?rooms=0&order=price": {
+      "title": "Студии",
+      "information": []
+    },
+    "https://unistroy.ru/search/1-komnatnye-kvartiry": {
+      "title": "1-комнатные",
+      "information": []
+    },
+    "https://unistroy.ru/search/2-komnatnye-kvartiry": {
+      "title": "2-комнатные",
+      "information": []
+    },
+    "https://unistroy.ru/search/3-komnatnye-kvartiry": {
+      "title": "3-комнатные",
+      "information": []
+    },
+    "https://unistroy.ru/search?rooms=4&order=price": {
+      "title": "4-комнатные",
+      "information": []
+    },
+    "https://unistroy.ru/search?rooms=5&order=price": {
+      "title": "5-комнатные",
+      "information": []
+    },
+    "https://unistroy.ru/parking": {
+      "title": "Все машино-места",
+      "information": []
+    },
+    "https://unistroy.ru/parking/?project=statum": {
+      "title": "Статум",
+      "information": []
+    },
+    "https://unistroy.ru/parking/?project=unicum_amir": {
+      "title": "Уникум на Амирхана",
+      "information": []
+    },
+    "https://unistroy.ru/parking/?project=unicum_pob": {
+      "title": "Уникум на проспекте Победы",
+      "information": []
+    },
+    "https://unistroy.ru/parking/?project=qkulagina": {
+      "title": "Q на Кулагина",
+      "information": []
+    },
+    "https://unistroy.ru/parking/?project=letokzn": {
+      "title": "Лето",
+      "information": []
+    },
+    "https://unistroy.ru/parking/?project=vesna2": {
+      "title": "Весна",
+      "information": []
+    },
+    "https://unistroy.ru/storages": {
+      "title": "Все кладовые",
+      "information": []
+    },
+    "https://unistroy.ru/storages/?project=statum": {
+      "title": "Статум",
+      "information": []
+    },
+    "https://unistroy.ru/storages/?project=unicum_amir": {
+      "title": "Уникум на Амирхана",
+      "information": []
+    },
+    "https://unistroy.ru/storages/?project=unicum_pob": {
+      "title": "Уникум на проспекте Победы",
+      "information": []
+    },
+    "https://unistroy.ru/storages/?project=qkulagina": {
+      "title": "Q на Кулагина",
+      "information": []
+    },
+    "https://unistroy.ru/storages/?project=tech": {
+      "title": "Уникод на Технической",
+      "information": []
+    },
+    "https://unistroy.ru/storages/?project=vesna2": {
+      "title": "Весна",
+      "information": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "code": "spb",
+    "status": 200,
+    "url": "https://unistroy.ru/spb"
+  },
+  {
+    "code": "ekb",
+    "status": 200,
+    "url": "https://unistroy.ru/ekb"
+  },
+  {
+    "code": "tlt",
+    "status": 200,
+    "url": "https://unistroy.ru/tlt"
+  },
+  {
+    "code": "mhchkala",
+    "status": 200,
+    "url": "https://unistroy.ru/mhchkala"
+  },
+  {
+    "code": "perm",
+    "status": 200,
+    "url": "https://unistroy.ru/perm"
+  },
+  {
+    "code": "nn",
+    "status": 200,
+    "url": "https://unistroy.ru/nn"
+  }
+]
