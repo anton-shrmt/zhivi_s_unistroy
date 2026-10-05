@@ -495,6 +495,17 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .cta-final { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px,5vw,64px); align-items: center; }
 .form-card { background: var(--white); border-radius: var(--r-lg); padding: 20px; box-shadow: var(--shadow-lg); }
 .form-grid { display: grid; gap: 12px; }
+.form-purpose { border: 0; padding: 0; margin: 0 0 20px; min-width: 0; }
+.form-purpose legend { padding: 0; margin-bottom: 10px; font-size: 13px; color: var(--ink); }
+.form-purpose-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.form-purpose-options label { position: relative; cursor: pointer; }
+.form-purpose-options input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.form-purpose-options span { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 8px; border: 1px solid var(--line); border-radius: var(--r-sm); color: var(--dark); font-size: 14px; line-height: 1.2; text-align: center; }
+.form-purpose-options input:checked + span { background: var(--dark); border-color: var(--dark); color: var(--white); }
+.form-purpose-options input:focus-visible + span { outline: 2px solid var(--dark); outline-offset: 3px; }
+.lead-payment { margin-top: 28px; padding: 20px; border: 1px solid var(--line-dark); border-radius: var(--r-md); background: rgba(255,255,255,0.03); }
+.lead-payment h3 { margin: 0 0 10px; font-size: 20px; font-weight: 600; line-height: 1.2; color: var(--white); }
+.lead-payment p { margin: 0; font-size: 16px; line-height: 1.45; color: rgba(255,255,255,0.82); }
 .form-field label { display: block; font-weight: 400; font-size: 13px; line-height: 1; letter-spacing: -0.015em; color: var(--ink); margin-bottom: 8px; }
 .form-field input, .form-field select {
   width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 0 16px;
@@ -710,7 +721,11 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
 .header-dark-mode .app-feature h3,
 .header-dark-mode .faq-q,
 .header-dark-mode .form-field label,
+.header-dark-mode .form-purpose legend,
+.header-dark-mode .form-purpose-options span,
 .header-dark-mode .form-success h3 { color: var(--pg-text); }
+.header-dark-mode .form-purpose-options input:checked + span { background: var(--pg-text); border-color: var(--pg-text); color: var(--ink); }
+.header-dark-mode .form-purpose-options input:focus-visible + span { outline-color: var(--accent); }
 
 /* --- текст и знаки, которые в светлой теме тёмно-зелёные (--dark) --- */
 .header-dark-mode .btn-outline,
@@ -1607,12 +1622,14 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
     <div class="cta-final">
       <div class="reveal">
         <p class="eyebrow">Последний шаг</p>
-        <h2 class="display">Получите персональный расчёт для своей квартиры</h2>
-        <p class="lead" style="margin-top:18px">Заполните форму — менеджер департамента аренды свяжется с вами, рассчитает доход и поможет подобрать тариф под ваши цели.</p>
+        <h2 class="display">Получите расчёт по аренде</h2>
+        <p class="lead" style="margin-top:18px">Собственникам рассчитаем ежемесячный доход и поможем выбрать тариф. Арендаторам подберём квартиру и рассчитаем ежемесячный платёж.</p>
+        <div class="lead-payment">
+          <h3>Оплата аренды и коммунальных услуг</h3>
+          <p>Принимаем платежи по ссылке. Оставьте имя и телефон в форме: менеджер уточнит данные и направит вам ссылку на оплату.</p>
+        </div>
         <ul class="pill-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Свяжемся в течение одного рабочего дня</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Проведём индивидуальную консультацию</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Без спама, давления и навязывания</li>
         </ul>
       </div>
 
@@ -1620,6 +1637,13 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
         <form id="leadForm" data-crm="amocrm" method="post" novalidate>
           <div id="formFields">
             <input type="hidden" name="source" value="landing-zhivi-s-unistroy">
+            <fieldset class="form-purpose">
+              <legend>Выберите ваш вариант</legend>
+              <div class="form-purpose-options">
+                <label><input type="radio" id="fOwner" name="clientRole" value="owner" checked><span>Я собственник</span></label>
+                <label><input type="radio" id="fTenant" name="clientRole" value="tenant"><span>Я арендатор</span></label>
+              </div>
+            </fieldset>
             <div class="form-grid">
               <div class="form-field">
                 <label for="fName">Имя</label>
@@ -1635,7 +1659,7 @@ input[type="range"]::-moz-range-thumb { width: 24px; height: 24px; border-radius
                 <label for="fCity">Город / ЖК <span class="muted" style="font-weight:500">— необязательно</span></label>
                 <input type="text" id="fCity" name="city" placeholder="Казань, Махачкала или название ЖК" autocomplete="off">
               </div>
-              <div class="form-field">
+              <div class="form-field" id="formOwnerModel">
                 <label for="fModel">Интересующая модель</label>
                 <select id="fModel" name="model">
                   <option value="longterm">Долгосрочная</option>
@@ -1973,6 +1997,8 @@ function initCalculator() {
 
 /* ---- "Оставить заявку с этим расчётом" ---- */
 function applyCalcToForm() {
+  document.getElementById('fOwner').checked = true;
+  syncFormClientRole();
   const modelSel = document.getElementById('fModel');
   if (modelSel) modelSel.value = state.model;
   const r = compute();
@@ -2077,6 +2103,13 @@ function initReveal() {
 }
 
 /* ---- form validation + amoCRM-ready payload ---- */
+function syncFormClientRole() {
+  const isTenant = document.getElementById('fTenant').checked;
+  document.getElementById('formOwnerModel').hidden = isTenant;
+  document.getElementById('fModel').disabled = isTenant;
+  document.getElementById('formCalcNote').style.display = 'none';
+}
+
 function initForm() {
   const form = document.getElementById('leadForm');
   if (!form) return;
@@ -2084,6 +2117,10 @@ function initForm() {
   const phone = form.querySelector('#fPhone');
   const consent = form.querySelector('#fConsent');
   const consentError = form.querySelector('#consentError');
+  form.querySelectorAll('[name="clientRole"]').forEach(input => {
+    input.addEventListener('change', syncFormClientRole);
+  });
+  syncFormClientRole();
 
   const validateConsent = () => {
     const valid = consent.checked;
@@ -2219,7 +2256,9 @@ function initForm() {
 }
 
 function buildAmoLeadPayload(form) {
-  const r = compute();
+  const clientRole = form.querySelector('[name="clientRole"]:checked').value;
+  const isTenant = clientRole === 'tenant';
+  const r = isTenant ? null : compute();
   const phone = form.querySelector('#fPhone').value.trim();
   const name = form.querySelector('#fName').value.trim();
   const city = form.querySelector('#fCity').value.trim();
@@ -2241,19 +2280,24 @@ function buildAmoLeadPayload(form) {
       responsibleUserId: AMOCRM_CONFIG.responsibleUserId
     },
     fields: {
-      model,
-      modelLabel: MODEL_LABEL[model],
-      apartmentType: state.type,
-      apartmentTypeLabel: TYPE_LABEL[state.type],
-      condition: state.condition,
-      price: state.price,
-      dailyDaysPerYear: state.model === 'daily' ? state.days : null,
-      monthlyIncome: fmtRub(r.monthly),
-      yearlyIncome: fmtRub(r.yearly),
-      yieldPct: Math.round(r.yieldPct * 10) / 10,
-      paybackYears: Math.round(r.payback * 10) / 10,
-      grossRent: fmtRub(r.gross),
-      commissionAmount: fmtRub(r.commissionAmount)
+      clientRole,
+      clientRoleLabel: isTenant ? 'Арендатор' : 'Собственник',
+      request: isTenant ? 'Подбор квартиры, расчёт платежа или ссылка на оплату' : 'Расчёт дохода от аренды',
+      ...(!isTenant ? {
+        model,
+        modelLabel: MODEL_LABEL[model] || 'Пока не выбрал',
+        apartmentType: state.type,
+        apartmentTypeLabel: TYPE_LABEL[state.type],
+        condition: state.condition,
+        price: state.price,
+        dailyDaysPerYear: state.model === 'daily' ? state.days : null,
+        monthlyIncome: fmtRub(r.monthly),
+        yearlyIncome: fmtRub(r.yearly),
+        yieldPct: Math.round(r.yieldPct * 10) / 10,
+        paybackYears: Math.round(r.payback * 10) / 10,
+        grossRent: fmtRub(r.gross),
+        commissionAmount: fmtRub(r.commissionAmount)
+      } : {})
     },
     page: {
       title: document.title,
