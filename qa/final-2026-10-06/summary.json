@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-06",
+  "builtAt": "2026-10-06T11:26:37.022719+00:00",
+  "baseCommit": "69594b67ea98499db56078e763358a89ff1ec738",
+  "indexSha256": "bd2934d78172afd52a777fb95b8fd68c70b099d38c79991e132ca05310591ddc",
+  "verdict": "Ready for developer handoff; production launch blocked by form integrations and pending approvals",
+  "phone": "+7 (960) 069-30-30",
+  "phoneReplacementAllowed": false,
+  "calculatorCases": 74,
+  "functionalChecks": 24,
+  "responsiveCases": 12,
+  "menuCasesUnique": 122,
+  "localResources": 95,
+  "browserExternalPages": 61,
+  "published": false,
+  "realCRMTested": false,
+  "realPaymentsTested": false,
+  "openIssues": [
+    {
+      "priority": "P1",
+      "id": "FORMS",
+      "text": "Both form endpoints are absent. Configure and prove real receipt before launch."
+    },
+    {
+      "priority": "P1",
+      "id": "CALC-ASSUMPTIONS",
+      "text": "Daily model does not separately deduct operating costs; confirm rates and assumptions with business owner."
+    },
+    {
+      "priority": "P2",
+      "id": "PROMO-URL",
+      "text": "Inherited mobile About promo points to google.com. Correct destination requires owner confirmation."
+    },
+    {
+      "priority": "P2",
+      "id": "DEPLOYMENT",
+      "text": "Production domain metadata, compression/cache/CSP and Safari/Firefox/device smoke tests remain to be verified."
+    },
+    {
+      "priority": "SIGNOFF",
+      "id": "LEGAL",
+      "text": "Approved legal copy preserved pending lawyers; confirm operator/routing of header callback and font rights."
+    }
+  ]
+}

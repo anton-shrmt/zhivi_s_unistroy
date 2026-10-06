@@ -1,0 +1,1624 @@
+[
+  {
+    "label": "main",
+    "cards": 0,
+    "dark": false,
+    "focus": "burger",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "realty",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "realty",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 320,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 390,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 768,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": false,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Город",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "about",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "blog",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "clients",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "purchase",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "projects",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "apartments",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "parking",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": true,
+    "focus": "back",
+    "locked": true,
+    "phones": [],
+    "state": "storages",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "main",
+    "width": 1024,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "focus": null,
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "city",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "focus": "city",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "city",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": false,
+    "focus": "about",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "about",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": false,
+    "focus": "blog",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "blog",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": false,
+    "focus": "clients",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "clients",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": false,
+    "focus": "purchase",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "purchase",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": false,
+    "focus": "realty",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "projects",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": false,
+    "focus": "apartments",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "apartments",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": false,
+    "focus": "parking",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "parking",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": false,
+    "focus": "storages",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "storages",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "closed",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": true,
+    "focus": "city",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "city",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": true,
+    "focus": "about",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "about",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": true,
+    "focus": "blog",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "blog",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": true,
+    "focus": "clients",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "clients",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": true,
+    "focus": "purchase",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "purchase",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": true,
+    "focus": "realty",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "projects",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": true,
+    "focus": "apartments",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "apartments",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": true,
+    "focus": "parking",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "parking",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": true,
+    "focus": "storages",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "storages",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "closed",
+    "width": 1440,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": false,
+    "focus": "city",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "city",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": false,
+    "focus": "about",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "about",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": false,
+    "focus": "blog",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "blog",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": false,
+    "focus": "clients",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "clients",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": false,
+    "focus": "purchase",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "purchase",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": false,
+    "focus": "realty",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "projects",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": false,
+    "focus": "apartments",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "apartments",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": false,
+    "focus": "parking",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "parking",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": false,
+    "focus": "storages",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "storages",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": false,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "closed",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "city",
+    "cards": 0,
+    "dark": true,
+    "focus": "city",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "city",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "about",
+    "cards": 0,
+    "dark": true,
+    "focus": "about",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "about",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "blog",
+    "cards": 0,
+    "dark": true,
+    "focus": "blog",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "blog",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "clients",
+    "cards": 0,
+    "dark": true,
+    "focus": "clients",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "clients",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "purchase",
+    "cards": 0,
+    "dark": true,
+    "focus": "purchase",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "purchase",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "projects",
+    "cards": 15,
+    "dark": true,
+    "focus": "realty",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "projects",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "apartments",
+    "cards": 7,
+    "dark": true,
+    "focus": "apartments",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "apartments",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "parking",
+    "cards": 7,
+    "dark": true,
+    "focus": "parking",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "parking",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "storages",
+    "cards": 7,
+    "dark": true,
+    "focus": "storages",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "storages",
+    "width": 1920,
+    "phonePass": true
+  },
+  {
+    "label": "callback",
+    "cards": 0,
+    "dark": true,
+    "dialog": "Оставьте заявку на консультацию",
+    "focus": "close-modal",
+    "locked": true,
+    "phones": [
+      "tel:+79600693030",
+      "tel:+79600693030",
+      "tel:+79600693030"
+    ],
+    "state": "closed",
+    "width": 1920,
+    "phonePass": true
+  }
+]

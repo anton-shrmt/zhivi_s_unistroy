@@ -1,0 +1,665 @@
+{
+  "cases": [
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 35200,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 35200,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 35200,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 39600,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 39600,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 39600,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 52800,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 52800,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 52800,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 61600,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 61600,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 61600,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "studio",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 40500,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "studio",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 40500,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "studio",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 40500,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r1",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 45500,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r1",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 45500,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r1",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 45500,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r2",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 60700,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r2",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 60700,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r2",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 60700,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r3",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 70800,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r3",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 70800,
+      "pass": true
+    },
+    {
+      "model": "longterm",
+      "condition": "business",
+      "type": "r3",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 70800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 30000,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 30000,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 30000,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 33800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 33800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 33800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 45000,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 45000,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 45000,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 52500,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 52500,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 52500,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "studio",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 34500,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "studio",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 34500,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "studio",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 34500,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r1",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 38800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r1",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 38800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r1",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 38800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r2",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 51800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r2",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 51800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r2",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 51800,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r3",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 60400,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r3",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 60400,
+      "pass": true
+    },
+    {
+      "model": "guaranteed",
+      "condition": "business",
+      "type": "r3",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 60400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 79500,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 79500,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "studio",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 79500,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 95400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 95400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r1",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 95400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 111300,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 111300,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r2",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 111300,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 127200,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 127200,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "comfort",
+      "type": "r3",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 127200,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "studio",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 91400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "studio",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 91400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "studio",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 91400,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r1",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 109700,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r1",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 109700,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r1",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 109700,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r2",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 128000,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r2",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 128000,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r2",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 128000,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r3",
+      "price": 3000000,
+      "days": 265,
+      "monthly": 146300,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r3",
+      "price": 9500000,
+      "days": 265,
+      "monthly": 146300,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "condition": "business",
+      "type": "r3",
+      "price": 20000000,
+      "days": 265,
+      "monthly": 146300,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "days": 150,
+      "monthly": 54000,
+      "pass": true
+    },
+    {
+      "model": "daily",
+      "days": 340,
+      "monthly": 122400,
+      "pass": true
+    }
+  ],
+  "passed": 74
+}

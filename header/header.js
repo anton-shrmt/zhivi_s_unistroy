@@ -79,6 +79,7 @@
     host.querySelectorAll('[role="switch"]').forEach(el=>action(el,'theme'));
     host.querySelectorAll('._overlay_eh7mv_16').forEach(el=>action(el,'close'));
     host.querySelectorAll('._overlay_1abu0_43').forEach(el=>action(el,'close-modal'));
+    host.querySelectorAll('._overlay_eh7mv_16, ._overlay_1abu0_43').forEach(el=>{el.tabIndex=-1;el.setAttribute('aria-hidden','true');});
     host.querySelectorAll('._VSelectOption_ivyab_15').forEach(el=>{
       const text=el.textContent.trim(); if(text in cities) {
         action(el,'city:'+cities[text]); el.setAttribute('aria-label',text);
@@ -149,7 +150,7 @@
     if(name==='city'&&mobile) {returnAction='city';modal='city';render();return;}
     const target=name==='realty'&&!mobile?'projects':name;
     if(!mobile && state===target && !openedByHover && !realty.includes(name)) {close();return;}
-    openedByHover=false;returnAction=name;state=target;render(fromKeyboard?name:undefined);
+    openedByHover=false;returnAction=name;state=target;render(name);
     if(mobile) host.querySelector('[data-action="back"]')?.focus({preventScroll:true});
   }
   host.addEventListener('click',event=>{
@@ -212,27 +213,32 @@
   host.addEventListener('submit',async event=>{
     event.preventDefault();
     const form=event.target;
+    if(form.dataset.submitting==='true') return;
     const name=form.elements.name,phone=form.elements.phone,consent=form.elements['personal-consent'];
-    const invalid=!name.value.trim()?name:phone.value.replace(/\D/g,'').length!==11?phone:!consent.checked?consent:null;
+    const phoneDigits=phone.value.replace(/\D/g,'').replace(/^8/,'7');
+    const invalid=name.value.trim().length<2?name:!/^7\d{10}$/.test(phoneDigits)?phone:!consent.checked?consent:null;
     form.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));
+    form.querySelectorAll('[aria-describedby="header-form-error"]').forEach(el=>el.removeAttribute('aria-describedby'));
     form.querySelector('.ref-form-error')?.remove();
     if(invalid) {
-      invalid.setAttribute('aria-invalid','true');invalid.focus();
-      const p=document.createElement('p');p.className='ref-form-error';p.role='alert';
+      invalid.setAttribute('aria-invalid','true');invalid.setAttribute('aria-describedby','header-form-error');invalid.focus();
+      const p=document.createElement('p');p.id='header-form-error';p.className='ref-form-error';p.role='alert';
       p.textContent=invalid===consent?'Подтвердите согласие на обработку персональных данных.':'Укажите имя и телефон в формате +7 999 999-99-99.';
       form.append(p);return;
     }
-    const detail={name:name.value.trim(),phone:phone.value,city:'kzn',taxi:form.elements.taxi.checked,
+    const detail={name:name.value.trim(),phone:'+'+phoneDigits,city:'kzn',taxi:form.elements.taxi.checked,
       consent:{personalData:true,marketing:form.elements['distribution-consent'].checked,capturedAt:new Date().toISOString()},source:'shared-header'};
     host.dispatchEvent(new CustomEvent('unistroy:callback-ready',{bubbles:true,detail}));
     const endpoint=window.UNISTROY_HEADER_CONFIG?.callbackEndpoint;
     if(!endpoint) return;
+    form.dataset.submitting='true';form.setAttribute('aria-busy','true');
     const submit=form.querySelector('[type="submit"]');submit.disabled=true;
     try {
       const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(detail)});
       if(!response.ok) throw new Error('callback');
       form.innerHTML='<p class="ref-form-success" role="status">Заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>';
-    }catch{const p=document.createElement('p');p.className='ref-form-error';p.role='alert';p.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';form.append(p);submit.disabled=false;}
+    }catch{const p=document.createElement('p');p.className='ref-form-error';p.role='alert';p.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';form.append(p);}
+    finally{delete form.dataset.submitting;form.removeAttribute('aria-busy');if(submit.isConnected)submit.disabled=false;}
   });
   window.addEventListener('resize',()=>{const next=innerWidth<768?'mobile':innerWidth<1280?'tablet':'desktop';if(next!==layout){layout=next;mobile=innerWidth<1280;close();}else{const active=[...host.querySelectorAll('.swiper-slide')].findIndex(el=>el.classList.contains('swiper-slide-active'));slideTo(Math.max(0,active));}document.documentElement.style.setProperty('--header-offset',wrapper.getBoundingClientRect().height+'px');});
   render();

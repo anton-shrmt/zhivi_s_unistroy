@@ -1,0 +1,352 @@
+{
+  "sourceSha256": "bd2934d78172afd52a777fb95b8fd68c70b099d38c79991e132ca05310591ddc",
+  "templates": [
+    {
+      "name": "mobile-projects",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-realty",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-apartments",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-clients",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-blog",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-apartments",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-parking",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-realty",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-projects",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-main",
+      "phoneLinks": 4,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-purchase",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-city",
+      "phoneLinks": 4,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-about",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-blog",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-storages",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-clients",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-purchase",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-storages",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-parking",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-purchase",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-city",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-about",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-apartments",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-closed",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-storages",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-parking",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-projects",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-city",
+      "phoneLinks": 4,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "mobile-blog",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "tablet-about",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "desktop-clients",
+      "phoneLinks": 3,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "city-modal",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "callback-modal",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    },
+    {
+      "name": "city-tablet-modal",
+      "phoneLinks": 0,
+      "fixedPhone": true,
+      "staleInventory": false
+    }
+  ],
+  "localResourcesChecked": 95,
+  "missingResources": [],
+  "duplicateIds": [],
+  "brokenAnchors": [],
+  "javascript": [
+    {
+      "file": "inline-0",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "file": "header/header.js",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "file": "header/templates.js",
+      "pass": true,
+      "error": ""
+    }
+  ],
+  "privacy": [
+    {
+      "file": "policy/privacy.pdf",
+      "sha256": "7595d73b0336df3e1ba1f0b64649eb851ea7401fbf86b7a5098f77845cfb6098",
+      "referencedVersionCorrect": true
+    },
+    {
+      "file": "policy/personal-data-consent.pdf",
+      "sha256": "977f4daa6417b468976ee0edf1a65b8b349d5070069469ee7f4b5797dfa8de10",
+      "referencedVersionCorrect": true
+    },
+    {
+      "file": "policy/marketing-consent.pdf",
+      "sha256": "699e075b252ae4cf8b41036786c086b9c4f6121174525533fd5a2e4b3f09f871",
+      "referencedVersionCorrect": true
+    }
+  ],
+  "secretPatternFiles": [],
+  "scripts": [
+    "header/templates.js?v=2c846e4fa8",
+    "header/header.js?v=704e15d136"
+  ],
+  "externalLinks": [
+    "https://google.com",
+    "https://rutube.ru/channel/42117533/",
+    "https://t.me/unistroy",
+    "https://unistroy.ru",
+    "https://unistroy.ru/30-years",
+    "https://unistroy.ru/about",
+    "https://unistroy.ru/about/vacancies",
+    "https://unistroy.ru/actions",
+    "https://unistroy.ru/arenda_kv",
+    "https://unistroy.ru/blog",
+    "https://unistroy.ru/blog/expert",
+    "https://unistroy.ru/blog/news",
+    "https://unistroy.ru/blog/news/igrajte-otkryvajte-novoe-i-poluchite-shans-vyigrat-kvartiru",
+    "https://unistroy.ru/contacts",
+    "https://unistroy.ru/documents",
+    "https://unistroy.ru/faq",
+    "https://unistroy.ru/favorites",
+    "https://unistroy.ru/objects",
+    "https://unistroy.ru/objects/aqua",
+    "https://unistroy.ru/objects/art",
+    "https://unistroy.ru/objects/atmos",
+    "https://unistroy.ru/objects/corner_bright",
+    "https://unistroy.ru/objects/letokzn",
+    "https://unistroy.ru/objects/qkulagina",
+    "https://unistroy.ru/objects/statum",
+    "https://unistroy.ru/objects/tech",
+    "https://unistroy.ru/objects/tsarciti",
+    "https://unistroy.ru/objects/ukod_zales",
+    "https://unistroy.ru/objects/unicum_amir",
+    "https://unistroy.ru/objects/unicum_pob",
+    "https://unistroy.ru/objects/vesna2",
+    "https://unistroy.ru/objects/yes_gorki",
+    "https://unistroy.ru/oplata/calculator",
+    "https://unistroy.ru/oplata/ipoteka",
+    "https://unistroy.ru/oplata/lizing",
+    "https://unistroy.ru/oplata/materinskij-kapital",
+    "https://unistroy.ru/oplata/online",
+    "https://unistroy.ru/oplata/rassrochka",
+    "https://unistroy.ru/oplata/trade-in",
+    "https://unistroy.ru/parking",
+    "https://unistroy.ru/parking/?project=letokzn",
+    "https://unistroy.ru/parking/?project=qkulagina",
+    "https://unistroy.ru/parking/?project=statum",
+    "https://unistroy.ru/parking/?project=unicum_amir",
+    "https://unistroy.ru/parking/?project=unicum_pob",
+    "https://unistroy.ru/parking/?project=vesna2",
+    "https://unistroy.ru/privacy",
+    "https://unistroy.ru/privacy/advertising",
+    "https://unistroy.ru/privacy/personal",
+    "https://unistroy.ru/search",
+    "https://unistroy.ru/search/1-komnatnye-kvartiry",
+    "https://unistroy.ru/search/2-komnatnye-kvartiry",
+    "https://unistroy.ru/search/3-komnatnye-kvartiry",
+    "https://unistroy.ru/search?rooms=0&order=price",
+    "https://unistroy.ru/search?rooms=4&order=price",
+    "https://unistroy.ru/search?rooms=5&order=price",
+    "https://unistroy.ru/service-company",
+    "https://unistroy.ru/standards",
+    "https://unistroy.ru/storages",
+    "https://unistroy.ru/storages/?project=qkulagina",
+    "https://unistroy.ru/storages/?project=statum",
+    "https://unistroy.ru/storages/?project=tech",
+    "https://unistroy.ru/storages/?project=unicum_amir",
+    "https://unistroy.ru/storages/?project=unicum_pob",
+    "https://unistroy.ru/storages/?project=vesna2",
+    "https://vk.com/unistroyrf"
+  ],
+  "images": [
+    {
+      "src": "img/hero.jpg",
+      "alt": "Светлый интерьер квартиры Унистрой: кухня-гостиная с обеденной зоной",
+      "loading": null,
+      "width": "1000",
+      "height": "1333",
+      "bytes": 263342
+    },
+    {
+      "src": "img/owner-dashboard-iphone.png",
+      "alt": "Экран приложения Унистрой Аренда с обзором дохода и квартир",
+      "loading": "lazy",
+      "width": "1190",
+      "height": "2556",
+      "bytes": 568382
+    },
+    {
+      "src": "img/unistroy-logo.svg",
+      "alt": "",
+      "loading": "lazy",
+      "width": "104",
+      "height": "24",
+      "bytes": 2538
+    }
+  ],
+  "sizes": {
+    "index.html": 168173,
+    "header/templates.js": 539063,
+    "header/reference.css": 196590,
+    "header/header.js": 16248
+  }
+}

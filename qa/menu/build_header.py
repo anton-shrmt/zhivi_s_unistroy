@@ -9,6 +9,8 @@ from lxml import html, etree
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent.parent / 'header'
 OUT.mkdir(exist_ok=True)
+CONTACT_PHONE_HREF = 'tel:+79600693030'
+CONTACT_PHONE_TEXT = '+7 (960) 069-30-30'
 states = {}
 for path in HERE.glob('reference-*.json'):
     if path.name == 'reference-css.json': continue
@@ -36,9 +38,10 @@ def clean(markup):
             val = el.get(attr)
             if val and val.startswith('/'): el.set(attr,urljoin('https://unistroy.ru/',val))
         if el.get('href','').startswith('tel:'):
-            el.set('href','tel:+78432955383')
+            el.set('href',CONTACT_PHONE_HREF)
+            el.set('aria-label',CONTACT_PHONE_TEXT)
             for textel in el.iter():
-                if textel.text and re.search(r'\+7[\s(]',textel.text): textel.text = '+7 (843) 295-53-83'
+                if textel.text and re.search(r'\+7[\s(]',textel.text): textel.text = CONTACT_PHONE_TEXT
         # Every image keeps the exact original responsive sources, without its blurred placeholder.
         if el.tag == 'img' and el.get('srcset'):
             el.set('src',el.get('srcset').split(',')[0].strip().split(' ')[0])

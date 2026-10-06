@@ -1,0 +1,7 @@
+{
+  "mainPhoneDigits": 10,
+  "selectedModel": "daily",
+  "monthlyIncome": 39600,
+  "expectedMonthlyIncomeDailyAtDefault": 95400,
+  "status": "confirmed defects"
+}

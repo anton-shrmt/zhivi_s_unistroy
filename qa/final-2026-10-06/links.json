@@ -1,0 +1,464 @@
+[
+  {
+    "url": "https://google.com",
+    "status": 200,
+    "finalUrl": "https://www.google.com/",
+    "seconds": "0.858376",
+    "error": ""
+  },
+  {
+    "url": "https://rutube.ru/channel/42117533/",
+    "status": 200,
+    "finalUrl": "https://rutube.ru/channel/42117533/",
+    "seconds": "0.533777",
+    "error": ""
+  },
+  {
+    "url": "https://t.me/unistroy",
+    "status": 200,
+    "finalUrl": "https://t.me/unistroy",
+    "seconds": "0.399132",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/",
+    "seconds": "0.117691",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/30-years",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/30-years",
+    "seconds": "0.114365",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/about",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/about",
+    "seconds": "0.116032",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/about/vacancies",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/about/vacancies",
+    "seconds": "0.032367",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/actions",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/actions",
+    "seconds": "0.037016",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/arenda_kv",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/arenda_kv",
+    "seconds": "0.031288",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/blog",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/blog",
+    "seconds": "0.035899",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/blog/expert",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/blog/expert",
+    "seconds": "0.044461",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/blog/news",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/blog/news",
+    "seconds": "0.033161",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/blog/news/igrajte-otkryvajte-novoe-i-poluchite-shans-vyigrat-kvartiru",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/blog/news/igrajte-otkryvajte-novoe-i-poluchite-shans-vyigrat-kvartiru",
+    "seconds": "0.030910",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/contacts",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/contacts",
+    "seconds": "0.031329",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/documents",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/documents",
+    "seconds": "0.031311",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/faq",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/faq",
+    "seconds": "0.057308",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/favorites",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/favorites",
+    "seconds": "0.057299",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects",
+    "seconds": "0.050309",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/aqua",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/aqua",
+    "seconds": "0.055343",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/art",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/art",
+    "seconds": "0.055241",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/atmos",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/atmos",
+    "seconds": "0.055361",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/corner_bright",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/corner_bright",
+    "seconds": "0.033730",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/letokzn",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/letokzn",
+    "seconds": "0.032536",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/qkulagina",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/qkulagina",
+    "seconds": "0.033773",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/statum",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/statum",
+    "seconds": "0.042332",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/tech",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/tech",
+    "seconds": "0.046032",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/tsarciti",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/tsarciti",
+    "seconds": "0.046010",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/ukod_zales",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/ukod_zales",
+    "seconds": "0.046067",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/unicum_amir",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/unicum_amir",
+    "seconds": "0.045050",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/unicum_pob",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/unicum_pob",
+    "seconds": "0.045909",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/vesna2",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/vesna2",
+    "seconds": "0.045892",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/objects/yes_gorki",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/objects/yes_gorki",
+    "seconds": "0.045895",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/calculator",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/calculator",
+    "seconds": "0.040282",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/ipoteka",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/ipoteka",
+    "seconds": "0.038221",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/lizing",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/lizing",
+    "seconds": "0.044830",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/materinskij-kapital",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/materinskij-kapital",
+    "seconds": "0.037041",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/online",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/online",
+    "seconds": "0.036934",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/rassrochka",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/rassrochka",
+    "seconds": "0.039298",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/oplata/trade-in",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/oplata/trade-in",
+    "seconds": "0.041229",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking",
+    "seconds": "0.044130",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking/?project=letokzn",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking/?project=letokzn",
+    "seconds": "0.040412",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking/?project=qkulagina",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking/?project=qkulagina",
+    "seconds": "0.039382",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking/?project=statum",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking/?project=statum",
+    "seconds": "0.039225",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking/?project=unicum_amir",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking/?project=unicum_amir",
+    "seconds": "0.042765",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking/?project=unicum_pob",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking/?project=unicum_pob",
+    "seconds": "0.032858",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/parking/?project=vesna2",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/parking/?project=vesna2",
+    "seconds": "0.036555",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/privacy",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/privacy",
+    "seconds": "0.042772",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/privacy/advertising",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/privacy/advertising",
+    "seconds": "0.035489",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/privacy/personal",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/privacy/personal",
+    "seconds": "0.030303",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search",
+    "seconds": "0.035841",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search/1-komnatnye-kvartiry",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search/1-komnatnye-kvartiry",
+    "seconds": "0.035902",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search/2-komnatnye-kvartiry",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search/2-komnatnye-kvartiry",
+    "seconds": "0.036543",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search/3-komnatnye-kvartiry",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search/3-komnatnye-kvartiry",
+    "seconds": "0.038691",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search?rooms=0&order=price",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search?rooms=0&order=price",
+    "seconds": "0.038550",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search?rooms=4&order=price",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search?rooms=4&order=price",
+    "seconds": "0.034152",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/search?rooms=5&order=price",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/search?rooms=5&order=price",
+    "seconds": "0.030665",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/service-company",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/service-company",
+    "seconds": "0.034697",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/standards",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/standards",
+    "seconds": "0.035403",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages",
+    "seconds": "0.041254",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages/?project=qkulagina",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages/?project=qkulagina",
+    "seconds": "0.040175",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages/?project=statum",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages/?project=statum",
+    "seconds": "0.042488",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages/?project=tech",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages/?project=tech",
+    "seconds": "0.033454",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages/?project=unicum_amir",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages/?project=unicum_amir",
+    "seconds": "0.037359",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages/?project=unicum_pob",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages/?project=unicum_pob",
+    "seconds": "0.033777",
+    "error": ""
+  },
+  {
+    "url": "https://unistroy.ru/storages/?project=vesna2",
+    "status": 403,
+    "finalUrl": "https://unistroy.ru/storages/?project=vesna2",
+    "seconds": "0.035677",
+    "error": ""
+  },
+  {
+    "url": "https://vk.com/unistroyrf",
+    "status": 200,
+    "finalUrl": "https://m.vk.com/unistroyrf",
+    "seconds": "0.535907",
+    "error": ""
+  }
+]

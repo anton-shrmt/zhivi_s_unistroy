@@ -1,0 +1,17 @@
+{
+  "browser": "Codex In-app Browser (Chromium)",
+  "version": "Not exposed by the supported browser API",
+  "viewportEmulation": true,
+  "mobileDeviceEmulation": false,
+  "platform": "macOS",
+  "testedWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "realCRM": false,
+  "realPayments": false
+}

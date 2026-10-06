@@ -29,6 +29,10 @@
 #sharedHeader .ref-form-error { color:var(--text-negative); margin:12px 0 0; font-size:14px; }
 #sharedHeader .ref-form-success { padding:24px; color:var(--text-primary); font-size:18px; }
 #sharedHeader [aria-invalid="true"] { outline:1px solid var(--text-negative); }
+/* Keep the original checkbox drawing while exposing a native keyboard control. */
+#sharedHeader form ._input_kacqt_36 { position:relative; }
+#sharedHeader form input[type="checkbox"] { display:block; position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; }
+#sharedHeader form ._input_kacqt_36:focus-within { outline:2px solid var(--accent-500); outline-offset:3px; }
 #siteHeader.ref-open > .uh-rentnav { visibility:hidden; }
 #siteHeader { overflow:visible; }
 /* The transparent top padding must not intercept the back/close buttons. */

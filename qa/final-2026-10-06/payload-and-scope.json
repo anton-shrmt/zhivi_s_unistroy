@@ -1,0 +1,10 @@
+{
+  "approvedMainCopyUnchanged": true,
+  "mainSingleRequestWhilePending": true,
+  "headerSingleRequestWhilePending": true,
+  "optionalMarketingFalseAccepted": true,
+  "syntheticRequestsOnly": true,
+  "baselineBugRequestExcluded": true,
+  "dailyPayloadAfterFix": true,
+  "unknownModelNoInventedIncome": true
+}

@@ -1,0 +1,469 @@
+--- before/index.html
++++ after/index.html
+@@ -493,6 +493,7 @@
+ 
+ /* ---------- Final CTA form ---------- */
+ .cta-final { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px,5vw,64px); align-items: center; }
++.cta-final h2 { hyphens: none; }
+ .form-card { background: var(--white); border-radius: var(--r-lg); padding: 20px; box-shadow: var(--shadow-lg); }
+ .form-grid { display: grid; gap: 12px; }
+ .form-field label { display: block; font-weight: 400; font-size: 13px; line-height: 1; letter-spacing: -0.015em; color: var(--ink); margin-bottom: 8px; }
+@@ -1056,7 +1057,7 @@
+ 
+ </style>
+ <link rel="stylesheet" href="header/reference.css?v=1cedc90b30">
+-<link rel="stylesheet" href="header/header.css?v=b6cf7ac304">
++<link rel="stylesheet" href="header/header.css?v=152d740c2e">
+ </head>
+ <body>
+ 
+@@ -1082,7 +1083,7 @@
+   <polygon fill="none" stroke="#364B4B" stroke-width="12.73" stroke-miterlimit="22.9256" points="205.69,336.65 161.92,370.75 161.92,286.05 205.69,251.94 "></polygon>
+   <polygon fill="none" stroke="#364B4B" stroke-width="12.73" stroke-miterlimit="22.9256" points="244.84,381.9 122.76,477.03 122.76,240.79 244.84,145.67 "></polygon>
+   <polygon fill="none" stroke="#364B4B" stroke-width="12.73" stroke-miterlimit="22.9256" points="121.82,283.26 122.76,240.79 142.12,225.71 142.12,121.12 142.12,31.91 20.04,127.04 20.04,196.16 100.62,135.51 100.62,157.12 48.71,195.87 50.05,238.07 103.38,201.87 103.38,221.82 20.04,281.95 19.99,362.94 118.02,286.56 "></polygon>
+- </g></g></svg></div><button class="_VButton_1cs5e_15 __light_1cs5e_105 __primary_1cs5e_105 __large_1cs5e_73 __neutral_ [generated header markup omitted]
++ </g></g></svg></div><button class="_VButton_1cs5e_15 __light_1cs5e_105 __primary_1cs5e_105 __large_1cs5e_73 __neutral_ [generated header markup omitted]
+ <!-- SHARED_HEADER_END -->
+ <nav class="uh-rentnav" aria-label="Навигация по сервису аренды">
+     <div class="uh-container">
+@@ -1298,9 +1299,9 @@
+         <div class="field">
+           <span class="field-label" id="modelLabel">Модель аренды</span>
+           <div class="segment" id="modelSeg" role="tablist" aria-labelledby="modelLabel">
+-            <button role="tab" data-model="daily" aria-selected="false">Посуточная</button>
+-            <button role="tab" data-model="longterm" aria-selected="true">Долгосрочная</button>
+-            <button role="tab" data-model="guaranteed" aria-selected="false">Гарантированная</button>
++            <button role="tab" id="calc-model-daily" data-model="daily" aria-selected="false" aria-controls="calcResult" tabindex="-1">Посуточная</button>
++            <button role="tab" id="calc-model-longterm" data-model="longterm" aria-selected="true" aria-controls="calcResult" tabindex="0">Долгосрочная</button>
++            <button role="tab" id="calc-model-guaranteed" data-model="guaranteed" aria-selected="false" aria-controls="calcResult" tabindex="-1">Гарантированная</button>
+           </div>
+         </div>
+ 
+@@ -1344,7 +1345,7 @@
+       </div>
+ 
+       <!-- RESULT -->
+-      <aside class="calc-result" aria-live="polite">
++      <aside class="calc-result" id="calcResult" role="tabpanel" aria-labelledby="calc-model-longterm" aria-live="polite">
+         <div class="res-main">
+           <div class="res-label">Арендный доход за год</div>
+           <div class="res-income val-anim"><span id="resYearlyCash">475&nbsp;200</span> <span class="cur">₽</span></div>
+@@ -1440,7 +1441,7 @@
+       </div>
+       <div class="app-device" aria-label="Интерфейс приложения Унистрой Аренда">
+         <p class="app-device-label">Личный кабинет собственника</p>
+-        <img src="img/owner-dashboard-iphone.png" alt="Экран приложения Унистрой Аренда с обзором дохода и квартир">
++        <img src="img/owner-dashboard-iphone.png" alt="Экран приложения Унистрой Аренда с обзором дохода и квартир" width="1190" height="2556" loading="lazy" decoding="async">
+       </div>
+     </div>
+   </div>
+@@ -1623,13 +1624,13 @@
+             <div class="form-grid">
+               <div class="form-field">
+                 <label for="fName">Имя</label>
+-                <input type="text" id="fName" name="name" placeholder="Как к вам обращаться" autocomplete="name">
+-                <span class="err-msg">Укажите имя</span>
++                <input type="text" id="fName" name="name" placeholder="Как к вам обращаться" autocomplete="name" required aria-describedby="nameError">
++                <span class="err-msg" id="nameError">Укажите имя</span>
+               </div>
+               <div class="form-field">
+                 <label for="fPhone">Телефон</label>
+-                <input type="tel" id="fPhone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+-                <span class="err-msg">Укажите корректный телефон</span>
++                <input type="tel" id="fPhone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required aria-describedby="phoneError">
++                <span class="err-msg" id="phoneError">Укажите корректный телефон</span>
+               </div>
+               <div class="form-field">
+                 <label for="fCity">Город / ЖК <span class="muted" style="font-weight:500">— необязательно</span></label>
+@@ -1725,8 +1726,8 @@
+   </div>
+ </footer>
+ 
+-<script src="header/templates.js?v=246a8db407"></script>
+-<script src="header/header.js?v=743fff3dc1"></script>
++<script src="header/templates.js?v=2c846e4fa8"></script>
++<script src="header/header.js?v=704e15d136"></script>
+ <script>
+ /* ============================================================
+    ЖИВИ С УНИСТРОЙ — interactive logic
+@@ -1783,8 +1784,8 @@
+   days: CONFIG.dailyDaysPerYear
+ };
+ 
+-function compute() {
+-  const { model, type, price, condition, days } = state;
++function compute(parameters = state) {
++  const { model, type, price, condition, days } = parameters;
+   const cf = CONFIG.renovationFactor[condition];
+   let gross = 0, commissionRate = 0, net = 0;
+ 
+@@ -1841,6 +1842,9 @@
+ /* ---- render ---- */
+ function render() {
+   const r = compute();
++  // A previous form summary no longer represents an edited calculation.
++  const formNote = document.getElementById('formCalcNote');
++  if (formNote) formNote.style.display = 'none';
+ 
+   setText('resYearlyCash', money(r.yearlyCash));
+   setText('resMonthly', money(r.monthly) + ' ₽ в месяц');
+@@ -1890,8 +1894,10 @@
+   if (!active) return;
+   document.querySelectorAll('#modelSeg button').forEach(btn => {
+     btn.setAttribute('aria-selected', String(btn === active));
++    btn.tabIndex = btn === active ? 0 : -1;
+   });
+   state.model = model;
++  document.getElementById('calcResult').setAttribute('aria-labelledby', active.id);
+   render();
+ }
+ 
+@@ -1907,7 +1913,17 @@
+ function initCalculator() {
+   // model segment
+   document.querySelectorAll('#modelSeg button').forEach(btn => {
++    btn.tabIndex = btn.dataset.model === state.model ? 0 : -1;
+     btn.addEventListener('click', () => setModel(btn.dataset.model));
++    btn.addEventListener('keydown', (event) => {
++      if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return;
++      event.preventDefault();
++      const index = MODEL_ORDER.indexOf(btn.dataset.model);
++      const next = event.key === 'Home' ? 0 : event.key === 'End' ? MODEL_ORDER.length - 1
++        : (index + (['ArrowRight', 'ArrowDown'].includes(event.key) ? 1 : MODEL_ORDER.length - 1)) % MODEL_ORDER.length;
++      setModel(MODEL_ORDER[next]);
++      document.querySelector('#modelSeg button[aria-selected="true"]').focus();
++    });
+   });
+ 
+   // type chips
+@@ -1981,23 +1997,37 @@
+     note.textContent = `${MODEL_LABEL[state.model]} · ${TYPE_LABEL[state.type]} · доход ≈ ${money(r.monthly)} ₽/мес`;
+     note.style.display = 'block';
+   }
+-  document.getElementById('lead').scrollIntoView({ behavior: 'smooth', block: 'start' });
++  document.getElementById('lead').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+ }
+ 
+ /* ---- accordion ---- */
+ function initFaq() {
+-  document.querySelectorAll('.faq-item').forEach(item => {
++  document.querySelectorAll('.faq-item').forEach((item, index) => {
+     const q = item.querySelector('.faq-q');
+     const a = item.querySelector('.faq-a');
++    a.id = `faq-answer-${index + 1}`;
++    q.setAttribute('aria-controls', a.id);
++    a.setAttribute('aria-hidden', 'true');
+     q.addEventListener('click', () => {
+       const open = item.classList.contains('open');
+       // close others
+       document.querySelectorAll('.faq-item.open').forEach(o => {
+-        if (o !== item) { o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null; o.querySelector('.faq-q').setAttribute('aria-expanded','false'); }
++        if (o !== item) {
++          o.classList.remove('open');
++          o.querySelector('.faq-a').style.maxHeight = null;
++          o.querySelector('.faq-a').setAttribute('aria-hidden', 'true');
++          o.querySelector('.faq-q').setAttribute('aria-expanded','false');
++        }
+       });
+       item.classList.toggle('open', !open);
+       q.setAttribute('aria-expanded', String(!open));
++      a.setAttribute('aria-hidden', String(open));
+       a.style.maxHeight = open ? null : a.scrollHeight + 'px';
++    });
++  });
++  window.addEventListener('resize', () => {
++    document.querySelectorAll('.faq-item.open .faq-a').forEach(a => {
++      a.style.maxHeight = a.scrollHeight + 'px';
+     });
+   });
+ }
+@@ -2084,6 +2114,9 @@
+   const phone = form.querySelector('#fPhone');
+   const consent = form.querySelector('#fConsent');
+   const consentError = form.querySelector('#consentError');
++  form.querySelector('#fModel').addEventListener('change', () => {
++    document.getElementById('formCalcNote').style.display = 'none';
++  });
+ 
+   const validateConsent = () => {
+     const valid = consent.checked;
+@@ -2102,7 +2135,7 @@
+   };
+ 
+   const validatePhone = (show = false) => {
+-    const valid = phone.value.replace(/\D/g, '').length >= 10;
++    const valid = /^7\d{10}$/.test(phone.value.replace(/\D/g, ''));
+     if (show || valid || phone.closest('.form-field').classList.contains('error')) {
+       setFieldError(phone, valid ? '' : 'Укажите корректный телефон');
+     }
+@@ -2111,6 +2144,7 @@
+ 
+   form.addEventListener('submit', async (e) => {
+     e.preventDefault();
++    if (form.dataset.submitting === 'true') return;
+     let ok = true;
+     const submitBtn = form.querySelector('button[type="submit"]');
+     setFormError('');
+@@ -2134,6 +2168,8 @@
+       return;
+     }
+ 
++    form.dataset.submitting = 'true';
++    form.setAttribute('aria-busy', 'true');
+     submitBtn.disabled = true;
+     submitBtn.textContent = 'Отправляем...';
+ 
+@@ -2149,6 +2185,8 @@
+       console.error('[amoCRM] Lead submit failed:', err);
+       setFormError('Не удалось отправить заявку. Позвоните нам или попробуйте ещё раз.');
+     } finally {
++      delete form.dataset.submitting;
++      form.removeAttribute('aria-busy');
+       submitBtn.disabled = false;
+       submitBtn.textContent = 'Оставить заявку';
+     }
+@@ -2219,11 +2257,11 @@
+ }
+ 
+ function buildAmoLeadPayload(form) {
+-  const r = compute();
+   const phone = form.querySelector('#fPhone').value.trim();
+   const name = form.querySelector('#fName').value.trim();
+   const city = form.querySelector('#fCity').value.trim();
+   const model = form.querySelector('#fModel').value;
++  const r = MODEL_LABEL[model] ? compute({ ...state, model }) : null;
+   const submittedAt = new Date().toISOString();
+ 
+   return {
+@@ -2242,18 +2280,18 @@
+     },
+     fields: {
+       model,
+-      modelLabel: MODEL_LABEL[model],
++      modelLabel: MODEL_LABEL[model] || 'Помогите выбрать модель',
+       apartmentType: state.type,
+       apartmentTypeLabel: TYPE_LABEL[state.type],
+       condition: state.condition,
+       price: state.price,
+-      dailyDaysPerYear: state.model === 'daily' ? state.days : null,
+-      monthlyIncome: fmtRub(r.monthly),
+-      yearlyIncome: fmtRub(r.yearly),
+-      yieldPct: Math.round(r.yieldPct * 10) / 10,
+-      paybackYears: Math.round(r.payback * 10) / 10,
+-      grossRent: fmtRub(r.gross),
+-      commissionAmount: fmtRub(r.commissionAmount)
++      dailyDaysPerYear: model === 'daily' ? state.days : null,
++      monthlyIncome: r ? fmtRub(r.monthly) : null,
++      yearlyIncome: r ? fmtRub(r.yearly) : null,
++      yieldPct: r ? Math.round(r.yieldPct * 10) / 10 : null,
++      paybackYears: r ? Math.round(r.payback * 10) / 10 : null,
++      grossRent: r ? fmtRub(r.gross) : null,
++      commissionAmount: r ? fmtRub(r.commissionAmount) : null
+     },
+     page: {
+       title: document.title,
+@@ -2312,6 +2350,7 @@
+ }
+ 
+ function setFieldError(input, msg) {
++  input.setAttribute('aria-invalid', String(!!msg));
+   const wrap = input.closest('.form-field');
+   wrap.classList.toggle('error', !!msg);
+   const em = wrap.querySelector('.err-msg');
+@@ -2327,7 +2366,7 @@
+       const model = btn.dataset.calcModel;
+       if (model) setModel(model);
+       e.preventDefault();
+-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
++      target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+     });
+   });
+   const applyBtn = document.getElementById('applyCalcBtn');
+--- before/header/header.js
++++ after/header/header.js
+@@ -79,6 +79,7 @@
+     host.querySelectorAll('[role="switch"]').forEach(el=>action(el,'theme'));
+     host.querySelectorAll('._overlay_eh7mv_16').forEach(el=>action(el,'close'));
+     host.querySelectorAll('._overlay_1abu0_43').forEach(el=>action(el,'close-modal'));
++    host.querySelectorAll('._overlay_eh7mv_16, ._overlay_1abu0_43').forEach(el=>{el.tabIndex=-1;el.setAttribute('aria-hidden','true');});
+     host.querySelectorAll('._VSelectOption_ivyab_15').forEach(el=>{
+       const text=el.textContent.trim(); if(text in cities) {
+         action(el,'city:'+cities[text]); el.setAttribute('aria-label',text);
+@@ -149,7 +150,7 @@
+     if(name==='city'&&mobile) {returnAction='city';modal='city';render();return;}
+     const target=name==='realty'&&!mobile?'projects':name;
+     if(!mobile && state===target && !openedByHover && !realty.includes(name)) {close();return;}
+-    openedByHover=false;returnAction=name;state=target;render(fromKeyboard?name:undefined);
++    openedByHover=false;returnAction=name;state=target;render(name);
+     if(mobile) host.querySelector('[data-action="back"]')?.focus({preventScroll:true});
+   }
+   host.addEventListener('click',event=>{
+@@ -212,27 +213,32 @@
+   host.addEventListener('submit',async event=>{
+     event.preventDefault();
+     const form=event.target;
++    if(form.dataset.submitting==='true') return;
+     const name=form.elements.name,phone=form.elements.phone,consent=form.elements['personal-consent'];
+-    const invalid=!name.value.trim()?name:phone.value.replace(/\D/g,'').length!==11?phone:!consent.checked?consent:null;
++    const phoneDigits=phone.value.replace(/\D/g,'').replace(/^8/,'7');
++    const invalid=name.value.trim().length<2?name:!/^7\d{10}$/.test(phoneDigits)?phone:!consent.checked?consent:null;
+     form.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));
++    form.querySelectorAll('[aria-describedby="header-form-error"]').forEach(el=>el.removeAttribute('aria-describedby'));
+     form.querySelector('.ref-form-error')?.remove();
+     if(invalid) {
+-      invalid.setAttribute('aria-invalid','true');invalid.focus();
+-      const p=document.createElement('p');p.className='ref-form-error';p.role='alert';
++      invalid.setAttribute('aria-invalid','true');invalid.setAttribute('aria-describedby','header-form-error');invalid.focus();
++      const p=document.createElement('p');p.id='header-form-error';p.className='ref-form-error';p.role='alert';
+       p.textContent=invalid===consent?'Подтвердите согласие на обработку персональных данных.':'Укажите имя и телефон в формате +7 999 999-99-99.';
+       form.append(p);return;
+     }
+-    const detail={name:name.value.trim(),phone:phone.value,city:'kzn',taxi:form.elements.taxi.checked,
++    const detail={name:name.value.trim(),phone:'+'+phoneDigits,city:'kzn',taxi:form.elements.taxi.checked,
+       consent:{personalData:true,marketing:form.elements['distribution-consent'].checked,capturedAt:new Date().toISOString()},source:'shared-header'};
+     host.dispatchEvent(new CustomEvent('unistroy:callback-ready',{bubbles:true,detail}));
+     const endpoint=window.UNISTROY_HEADER_CONFIG?.callbackEndpoint;
+     if(!endpoint) return;
++    form.dataset.submitting='true';form.setAttribute('aria-busy','true');
+     const submit=form.querySelector('[type="submit"]');submit.disabled=true;
+     try {
+       const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(detail)});
+       if(!response.ok) throw new Error('callback');
+       form.innerHTML='<p class="ref-form-success" role="status">Заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>';
+-    }catch{const p=document.createElement('p');p.className='ref-form-error';p.role='alert';p.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';form.append(p);submit.disabled=false;}
++    }catch{const p=document.createElement('p');p.className='ref-form-error';p.role='alert';p.textContent='Не удалось отправить заявку. Попробуйте ещё раз.';form.append(p);}
++    finally{delete form.dataset.submitting;form.removeAttribute('aria-busy');if(submit.isConnected)submit.disabled=false;}
+   });
+   window.addEventListener('resize',()=>{const next=innerWidth<768?'mobile':innerWidth<1280?'tablet':'desktop';if(next!==layout){layout=next;mobile=innerWidth<1280;close();}else{const active=[...host.querySelectorAll('.swiper-slide')].findIndex(el=>el.classList.contains('swiper-slide-active'));slideTo(Math.max(0,active));}document.documentElement.style.setProperty('--header-offset',wrapper.getBoundingClientRect().height+'px');});
+   render();
+--- before/header/header.css
++++ after/header/header.css
+@@ -29,6 +29,10 @@
+ #sharedHeader .ref-form-error { color:var(--text-negative); margin:12px 0 0; font-size:14px; }
+ #sharedHeader .ref-form-success { padding:24px; color:var(--text-primary); font-size:18px; }
+ #sharedHeader [aria-invalid="true"] { outline:1px solid var(--text-negative); }
++/* Keep the original checkbox drawing while exposing a native keyboard control. */
++#sharedHeader form ._input_kacqt_36 { position:relative; }
++#sharedHeader form input[type="checkbox"] { display:block; position:absolute; inset:0; width:100%; height:100%; margin:0; opacity:0; cursor:pointer; }
++#sharedHeader form ._input_kacqt_36:focus-within { outline:2px solid var(--accent-500); outline-offset:3px; }
+ #siteHeader.ref-open > .uh-rentnav { visibility:hidden; }
+ #siteHeader { overflow:visible; }
+ /* The transparent top padding must not intercept the back/close buttons. */
+--- before/qa/menu/build_header.py
++++ after/qa/menu/build_header.py
+@@ -9,6 +9,8 @@
+ HERE = Path(__file__).resolve().parent
+ OUT = HERE.parent.parent / 'header'
+ OUT.mkdir(exist_ok=True)
++CONTACT_PHONE_HREF = 'tel:+79600693030'
++CONTACT_PHONE_TEXT = '+7 (960) 069-30-30'
+ states = {}
+ for path in HERE.glob('reference-*.json'):
+     if path.name == 'reference-css.json': continue
+@@ -36,9 +38,10 @@
+             val = el.get(attr)
+             if val and val.startswith('/'): el.set(attr,urljoin('https://unistroy.ru/',val))
+         if el.get('href','').startswith('tel:'):
+-            el.set('href','tel:+78432955383')
++            el.set('href',CONTACT_PHONE_HREF)
++            el.set('aria-label',CONTACT_PHONE_TEXT)
+             for textel in el.iter():
+-                if textel.text and re.search(r'\+7[\s(]',textel.text): textel.text = '+7 (843) 295-53-83'
++                if textel.text and re.search(r'\+7[\s(]',textel.text): textel.text = CONTACT_PHONE_TEXT
+         # Every image keeps the exact original responsive sources, without its blurred placeholder.
+         if el.tag == 'img' and el.get('srcset'):
+             el.set('src',el.get('srcset').split(',')[0].strip().split(' ')[0])
+--- before/README.md
++++ after/README.md
+@@ -17,6 +17,8 @@
+ - Адреса, состав и порядок разделов сверены с головным сайтом. Исходные адреса
+   сохранены, включая временно недоступные страницы способов покупки.
+ - Переключатель темы сохраняет выбранное состояние шапки в браузере пользователя.
++- Телефон во всех вариантах меню постоянный: **+7 (960) 069-30-30**.
++  Коллтрекинг и динамическую подмену номера на этой странице не подключать.
+ - Интеграция общего меню и формы обратного звонка описана в `header/README.md`.
+ - Результаты проверки и парные снимки: `qa/menu/report.html`. Каталог `qa/`
+   предназначен для передачи разработчикам; на публичный сервер его выкладывать не нужно.
+@@ -47,12 +49,35 @@
+    Хранение, обработка отзыва и подключение CRM на сервере в этот статический релиз
+    не входят и пока не реализованы. Данные заявок в localStorage не сохраняются.
+ 
+-2. **og:image.** В `<head>` замените относительный путь на абсолютный URL с доменом:
+-   `<meta property="og:image" content="https://<домен>/img/hero.jpg">`.
++2. **Обратный звонок из меню.** Подключить отдельный `callbackEndpoint` или
++   обработчик события, описанный в `header/README.md`. Согласовать маршрутизацию
++   заявки, оператора и юридические ссылки этой формы. Одной настройки amoCRM
++   основной формы недостаточно для подключения обратного звонка.
+ 
+-3. **Ссылки-заглушки (`href="#"`)** — проставить реальные адреса, когда будут:
+-   - «Написать в мессенджер» (в форме заявки);
+-   - Telegram / ВКонтакте / WhatsApp в футере.
++3. **Адрес сайта и ресурсы.** `og:image` и `og:url` уже содержат абсолютные адреса
++   GitHub Pages. При переносе на домен Унистрой заменить их на адреса публикации.
++   Проверить HTTPS, сжатие HTML/CSS/JS, кеширование, CSP и получение заявки на
++   целевом сервере. Не публиковать служебный каталог `qa/`.
++
++4. **Промоссылка.** В мобильном меню «О компании» карточка «Комфорт начинается
++   здесь» содержит исходный адрес `https://google.com`. Согласовать целевой URL
++   с владельцем головного сайта. Произвольная замена адреса в QA не выполнялась.
++
++## Итоговая проверка 06.10.2026
++
++Отчёт: `qa/final-2026-10-06/report.html`. Проверены 6 размеров экрана в двух
++темах, меню, 74 расчётных сценария, формы на локальном стенде, ссылки и ресурсы.
++Реальная доставка в CRM, реальный эквайринг и целевая серверная конфигурация
++не проверены: эти интеграции в статическом релизе отсутствуют.
++
++Форма принимает полный российский номер из 11 цифр. Во время отправки повторная
++отправка блокируется. При выборе модели в форме расчёт в payload соответствует
++этой модели; для «Пока не выбрал» расчётные поля равны `null`. При изменении
++калькулятора предыдущая подпись перенесённого расчёта скрывается.
++
++До запуска подтвердить ставки и экономические допущения калькулятора, права на
++шрифты, бизнес-обещания и юридическую схему обеих форм. QA проверяет реализацию
++текущих правил и не заменяет согласование этих условий.
+ 
+ ## Примечания
+ 
+--- before/header/README.md
++++ after/header/README.md
+@@ -2,7 +2,7 @@
+ 
+ Эталон: https://unistroy.ru/, Казань, 05.10.2026. Это автономная статическая копия
+ интерфейса для передачи разработчикам. Подключение к приложению головного сайта,
+-CRM и коллтрекингу выполняется на этапе интеграции.
++CRM выполняется на этапе интеграции.
+ 
+ ## Файлы
+ 
+@@ -39,9 +39,11 @@
+ используют исходные URL CDN `unistroy.ru`. При переносе на другой сервер проверить
+ CSP для изображений этого домена и доступность CDN.
+ 
+-Телефон `+7 (843) 295-53-83` взят из исходной шапки. На головном сайте Roistat
+-подменяет его для посетителя. Подмену, аналитику и чужой сеанс отслеживания в копию
+-не переносили. При интеграции подключить утверждённый коллтрекинг.
++Телефон во всех вариантах меню постоянный: **+7 (960) 069-30-30**,
++ссылка `tel:+79600693030`. По решению заказчика номер не подменяется.
++Коллтрекинг и динамическую замену номера на этой странице не подключать.
++Генератор закрепляет этот номер в статической шапке, всех шаблонах и доступных
++подписях кнопки звонка, независимо от номера в новых снимках головного сайта.
+ 
+ Города открывают соответствующие региональные разделы головного сайта. Клик по
+ Казани закрывает выбор. Избранное, проекты, социальные сети и остальные ссылки
+@@ -92,7 +94,13 @@
+ Промокарточки переключаются точками и свайпом; точные промежуточные кадры анимации
+ и автопрокрутка оригинального Swiper отдельно не сертифицированы.
+ 
+-Ссылки способов покупки на дату проверки возвращали HTTP 500 и экран технических
+-работ на самом головном сайте. В мобильной промокарточке оригинала также обнаружен
++На повторной проверке 06.10.2026 все семь ссылок способов покупки открылись
++в браузере с HTTP 200. Предыдущая ошибка HTTP 500 больше не воспроизводится.
++В мобильной промокарточке оригинала также обнаружен
+ `https://google.com/`; исходный адрес сохранён для точного соответствия и отмечен
+ в отчёте. Исправления этих адресов следует вносить согласованно с головным сайтом.
++
++Актуальный итоговый QA: `../qa/final-2026-10-06/report.html`. В этой версии
++закреплён телефон аренды, восстановлен фокус настольных кнопок после открытия
++меню, чекбоксы доступны с клавиатуры. Встроенная отправка блокирует повторы,
++требует полный номер +7 из 11 цифр и нормализует ввод с начальной 8.

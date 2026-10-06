@@ -1,0 +1,231 @@
+[
+  {
+    "id": "main-incomplete-phone",
+    "invalid": "true",
+    "success": false,
+    "pass": true
+  },
+  {
+    "id": "main-success",
+    "pass": true
+  },
+  {
+    "id": "main-server-error",
+    "enabled": true,
+    "error": true,
+    "name": "QA проверка",
+    "success": false,
+    "pass": true
+  },
+  {
+    "id": "main-pending-guard",
+    "busy": "true",
+    "disabled": true,
+    "pass": true
+  },
+  {
+    "id": "header-consent-required",
+    "checked": false,
+    "focus": "personal-consent",
+    "invalid": "true",
+    "pass": true
+  },
+  {
+    "id": "header-keyboard-consent-success",
+    "pass": true
+  },
+  {
+    "id": "header-server-error",
+    "enabled": true,
+    "error": "Не удалось отправить заявку. Попробуйте ещё раз.",
+    "success": false,
+    "pass": true
+  },
+  {
+    "id": "header-pending-guard",
+    "busy": "true",
+    "disabled": true,
+    "pass": true
+  },
+  {
+    "name": "calculator-arrow-key",
+    "pass": true,
+    "details": {
+      "focus": "calc-model-guaranteed",
+      "income": "33 800 ₽ в месяц",
+      "label": "calc-model-guaranteed",
+      "selected": "calc-model-guaranteed"
+    }
+  },
+  {
+    "name": "calculator-occupancy-ui-boundaries",
+    "pass": true,
+    "occMin": "54 000 ₽ в месяц",
+    "occMax": "122 400 ₽ в месяц"
+  },
+  {
+    "name": "calculator-price-clamp",
+    "pass": true
+  },
+  {
+    "name": "calculator-transfer-to-form",
+    "pass": true
+  },
+  {
+    "name": "stale-form-calculation-hidden",
+    "pass": true
+  },
+  {
+    "name": "faq-keyboard-single-open-and-resize",
+    "pass": true,
+    "faqChecks": [
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      },
+      {
+        "expanded": 1,
+        "exposed": 1,
+        "open": 1
+      }
+    ],
+    "faqResize": {
+      "content": 166,
+      "height": 166
+    }
+  },
+  {
+    "name": "faq-space-close",
+    "pass": true
+  },
+  {
+    "name": "city-current-selection",
+    "pass": true
+  },
+  {
+    "name": "callback-focus-trap-and-escape",
+    "pass": true,
+    "modalLast": "на получение рекламных и маркетинговых коммуникаций",
+    "modalReverse": "на получение рекламных и маркетинговых коммуникаций",
+    "modalForward": "close-modal"
+  },
+  {
+    "name": "desktop-keyboard-menu-focus",
+    "pass": true
+  },
+  {
+    "name": "menu-outside-click",
+    "pass": true
+  },
+  {
+    "name": "main-consent-required",
+    "pass": true
+  },
+  {
+    "name": "main-short-name",
+    "pass": true
+  },
+  {
+    "name": "main-unconnected-no-request-or-false-success",
+    "pass": true,
+    "details": {
+      "phone": "<redacted>",
+      "success": "none"
+    }
+  },
+  {
+    "name": "anchor-navigation-reduced-motion",
+    "pass": true,
+    "details": [
+      {
+        "headerBottom": 188,
+        "id": "#top",
+        "top": 0
+      },
+      {
+        "headerBottom": 188,
+        "id": "#models",
+        "top": 203.953125
+      },
+      {
+        "headerBottom": 188,
+        "id": "#calculator",
+        "top": 204.1015625
+      },
+      {
+        "headerBottom": 188,
+        "id": "#how",
+        "top": 204.1875
+      },
+      {
+        "headerBottom": 188,
+        "id": "#advantages",
+        "top": 204.0703125
+      },
+      {
+        "headerBottom": 188,
+        "id": "#tenants",
+        "top": 204.03125
+      },
+      {
+        "headerBottom": 188,
+        "id": "#pricing",
+        "top": 203.7890625
+      },
+      {
+        "headerBottom": 188,
+        "id": "#faq",
+        "top": 204.046875
+      }
+    ]
+  },
+  {
+    "name": "cta-reduced-motion",
+    "pass": true,
+    "details": {
+      "header": 188,
+      "top": 204.1015625
+    }
+  }
+]
